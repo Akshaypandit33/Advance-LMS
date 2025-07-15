@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: user-management-service
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/userManagementService
+    username: postgres
+    password: manager
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8082
+
