@@ -4,6 +4,8 @@ import com.lms.usermanagementservice.Model.Roles;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import javax.swing.text.html.Option;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -11,4 +13,8 @@ import java.util.UUID;
 public interface RolesRepository extends JpaRepository<Roles, UUID> {
 
     Optional<Roles> findByRoleNameAndTenantId(String roleName, UUID tenantId);
+
+    Optional<Roles> findByRoleName(String name);
+
+    List<Roles> findByRoleNameIn(List<String> RoleNames);
 }

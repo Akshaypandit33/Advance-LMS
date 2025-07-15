@@ -9,6 +9,7 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+
 @Builder
 public class Actions {
     @Id
@@ -23,4 +24,9 @@ public class Actions {
     public void prePersistAndPreUpdate() {
         action = ACTIONS.valueOf(action.toString().toUpperCase());
     }
+
+    public String getActionString(){
+        return action.toString();
+    }
+
 }

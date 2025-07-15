@@ -27,4 +27,8 @@ public class Resource {
     @UpdateTimestamp
 
     private ZonedDateTime lastModifiedDate;
+
+    public String getResorceNameString(){
+        return resourceName.toString();
+    }
 }

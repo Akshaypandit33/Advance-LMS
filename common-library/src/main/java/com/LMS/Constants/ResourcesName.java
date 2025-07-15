@@ -4,5 +4,4 @@ public enum ResourcesName {
     USERS,
     ROLES,
     COURSE
-
 }

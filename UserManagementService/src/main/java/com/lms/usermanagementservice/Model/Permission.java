@@ -6,15 +6,20 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.util.List;
+import java.util.UUID;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@SuperBuilder
+@Builder
 @Table(name = "permissions", uniqueConstraints = @UniqueConstraint(columnNames = {"action_id", "resource_id", "tenant_id"}))
-public class Permission extends BaseClass {
+public class Permission{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
 
     @ManyToOne
     @JoinColumn(name = "action_id")

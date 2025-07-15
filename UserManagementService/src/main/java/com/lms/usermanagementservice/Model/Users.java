@@ -22,12 +22,14 @@ public class Users extends BaseClass {
     private String firstName;
     private String lastName;
 
+    @Column(unique = true)
     private String email;
     private String password;
     private String phoneNumber;
     private String gender;
+
     @Enumerated(EnumType.STRING)
-    private AccountStatus accountStatus;
+    private AccountStatus accountStatus = AccountStatus.ACTIVE;
 
     @Builder.Default
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
@@ -46,4 +48,9 @@ public class Users extends BaseClass {
         return userRoles.stream().map(UserRole::getRole).collect(Collectors.toSet());
     }
 
+    @PrePersist
+    @PreUpdate
+    public void prePersist() {
+        email = email.toLowerCase();
+    }
 }
