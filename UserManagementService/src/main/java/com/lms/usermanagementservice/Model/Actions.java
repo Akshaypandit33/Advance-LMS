@@ -19,6 +19,8 @@ public class Actions {
     @Enumerated(EnumType.STRING)
     private ACTIONS action;
 
+    private String descriptions;
+
     @PrePersist
     @PreUpdate
     public void prePersistAndPreUpdate() {

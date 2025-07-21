@@ -2,13 +2,18 @@ package com.lms.usermanagementservice.Model;
 
 import com.LMS.BaseClass;
 import com.LMS.Constants.AccountStatus;
+import com.LMS.Constants.DefaultRoles;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.hibernate.annotations.Filter;
+import org.hibernate.annotations.FilterDef;
+import org.hibernate.annotations.ParamDef;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Entity
@@ -17,6 +22,7 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
+@Filter(name = "tenantFilter",condition = "tenant_id = :tenantId")
 public class Users extends BaseClass {
 
     private String firstName;
@@ -40,7 +46,7 @@ public class Users extends BaseClass {
     }
 
     public boolean isSuperAdmin() {
-        return hasRole("SUPER_ADMIN");
+        return hasRole(DefaultRoles.SUPER_ADMIN.name());
     }
     // Optional: lazy-loaded derived roles
     @Transient

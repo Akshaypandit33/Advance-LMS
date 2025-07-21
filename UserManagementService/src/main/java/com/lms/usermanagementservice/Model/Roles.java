@@ -4,6 +4,9 @@ import com.LMS.BaseClass;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.hibernate.annotations.Filter;
+import org.hibernate.annotations.FilterDef;
+import org.hibernate.annotations.ParamDef;
 
 import java.util.HashSet;
 import java.util.List;
@@ -17,6 +20,7 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
+
 public class Roles extends BaseClass {
 
     private String roleName;

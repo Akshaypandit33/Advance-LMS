@@ -1,5 +1,6 @@
 package com.lms.usermanagementservice.Repository;
 
+import com.lms.usermanagementservice.Model.Permission;
 import com.lms.usermanagementservice.Model.RolePermission;
 import com.lms.usermanagementservice.Model.Roles;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -12,5 +13,6 @@ import java.util.UUID;
 public interface RolePermissionRepository extends JpaRepository<RolePermission, UUID> {
     Optional<RolePermission> findByRoleIdAndPermissionId(UUID roleId, UUID permissionId);
 
-    UUID role(Roles role);
+    Optional<RolePermission> findByPermission(Permission permission);
+    boolean existsByPermission(Permission permission);
 }

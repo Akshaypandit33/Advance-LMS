@@ -14,6 +14,6 @@ public record UserRequestDTO(
         String phoneNumber,
         String gender,
         AccountStatus accountStatus,
-        List<String> roles
+        List<UUID> rolesId
 ) {
 }

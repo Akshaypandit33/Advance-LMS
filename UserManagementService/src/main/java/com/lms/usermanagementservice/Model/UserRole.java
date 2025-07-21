@@ -4,6 +4,11 @@ import com.LMS.BaseClass;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.hibernate.annotations.Filter;
+import org.hibernate.annotations.FilterDef;
+import org.hibernate.annotations.ParamDef;
+
+import java.util.UUID;
 
 @Getter
 @Setter
@@ -14,6 +19,7 @@ import lombok.experimental.SuperBuilder;
 @Table(name = "user_roles", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"user_id", "role_id"})
 })
+
 public class UserRole extends BaseClass {
 
 
@@ -26,7 +32,6 @@ public class UserRole extends BaseClass {
     private Roles role;
 
 
-    // Optional fields
-    private String assignedBy; // or userId of admin
+
 }
 

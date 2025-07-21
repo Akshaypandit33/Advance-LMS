@@ -16,8 +16,10 @@ import com.lms.usermanagementservice.Repository.ResourceRepository;
 import com.lms.usermanagementservice.Repository.RolePermissionRepository;
 import com.lms.usermanagementservice.Repository.RolesRepository;
 import com.lms.usermanagementservice.Repository.PermissionRepository;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,7 +27,11 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+
+
 @Component
+@Order(1)
+
 @RequiredArgsConstructor
 public class RolesPermissionSeeder implements CommandLineRunner {
     private final RolesRepository rolesRepository;
@@ -61,6 +67,7 @@ public class RolesPermissionSeeder implements CommandLineRunner {
                             () -> rolePermissionRepository.save(
                                     RolePermission.builder()
                                             .permission(permission)
+                                            .tenantId(GlobalConstant.GLOBAL_TENANT_ID)
                                             .role(superAdminRoles)
                                             .build()
                             )
@@ -141,35 +148,7 @@ public class RolesPermissionSeeder implements CommandLineRunner {
 
 
 
-//    private List<Permission> seedPermissions(Map<ACTIONS, Actions> actionsMap, Map<ResourcesName, Resource> resourceMap) {
-//        List<Permission> allPermissions = new ArrayList<>();
-//        List<Permission> toCreate = new ArrayList<>();
-//
-//        for (Resource resource : resourceMap.values()) {
-//            for (Actions action : actionsMap.values()) {
-//                Optional<Permission> existing = permissionRepository.findPermissionByActionsIdAndResourceId(action.getId(), resource.getId());
-//
-//                if (existing.isPresent()) {
-//                    allPermissions.add(existing.get());
-//                } else {
-//                    Permission newPerm = Permission.builder()
-//                            .actions(action)
-//                            .resource(resource)
-//                            .build();
-//                    toCreate.add(newPerm);
-//                    allPermissions.add(newPerm); // add to result early
-//                }
-//            }
-//        }
-//
-//        // Batch save
-//        if (!toCreate.isEmpty()) {
-//            List<Permission> saved = permissionRepository.saveAll(toCreate);
-//            // (optional) replace unsaved refs in allPermissions with saved if needed
-//        }
-//
-//        return allPermissions;
-//    }
+
 
 
     private List<Permission> seedPermissions(Map<ACTIONS, Actions> actionsMap,
@@ -192,6 +171,7 @@ public class RolesPermissionSeeder implements CommandLineRunner {
                             Permission.builder()
                                     .actions(action)
                                     .resource(resource)
+                                    .tenantId(GlobalConstant.GLOBAL_TENANT_ID)
                                     .build()
                     );
                 }
@@ -265,6 +245,7 @@ public class RolesPermissionSeeder implements CommandLineRunner {
                             if (!alreadyExists) {
                                 toInsert.add(RolePermission.builder()
                                         .role(role)
+                                                .tenantId(GlobalConstant.GLOBAL_TENANT_ID)
                                         .permission(permission)
                                         .build());
                             }

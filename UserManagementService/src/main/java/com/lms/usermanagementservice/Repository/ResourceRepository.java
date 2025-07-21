@@ -15,4 +15,6 @@ public interface ResourceRepository extends JpaRepository<Resource, Long> {
     Optional<Resource> findByResourceName(ResourcesName resourceName);
 
     List<Resource> findByResourceNameIn(Collection<ResourcesName> resourceNames);
+
+    boolean existsByResourceName(ResourcesName resourceName);
 }

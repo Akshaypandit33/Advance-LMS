@@ -4,6 +4,9 @@ import com.LMS.BaseClass;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.hibernate.annotations.Filter;
+import org.hibernate.annotations.FilterDef;
+import org.hibernate.annotations.ParamDef;
 
 import java.util.List;
 import java.util.UUID;
@@ -13,13 +16,10 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@SuperBuilder
 @Table(name = "permissions", uniqueConstraints = @UniqueConstraint(columnNames = {"action_id", "resource_id", "tenant_id"}))
-public class Permission{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+public class Permission extends BaseClass{
 
     @ManyToOne
     @JoinColumn(name = "action_id")

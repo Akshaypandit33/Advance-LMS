@@ -1,4 +1,13 @@
 package com.LMS.DTOs.UserService;
 
-public record UserRoleResponseDTO() {
+import java.util.UUID;
+
+public record UserRoleResponseDTO(
+        UUID userRoleId,
+        UUID userId,
+        String fullName,
+        UUID roleId,
+        String roleName,
+        UUID tenantId
+) {
 }
