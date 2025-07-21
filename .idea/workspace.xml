@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14156c6a-d163-45f2-89f0-3df1ea66ac7e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Exceptions/TenantService/TenantNotFoundExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/ExceptionsHandler/GlobalExceptionsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/HibernateConfig/ConnectionProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/HibernateConfig/TenantIdentifierResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Resolver/HttpHeaderTenantResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Resolver/TenantResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/TenantContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/TenantInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/appearance.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/core-plugins.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserBusinessLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/ExceptionHandler/GlobalExceptionHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/ExceptionHandler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRequestDTOToEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRequestDTOToEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/RolePermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/RolePermission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/PermissionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/PermissionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/ResourceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/ResourceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolePermissionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolePermissionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRolesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRolesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Seeder/RolesPermissionSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Seeder/RolesPermissionSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/UserManagementServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/UserManagementServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/UserManagementServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Constants/GlobalConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Constants/GlobalConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRoleResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRoleResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Exceptions/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Exceptions/ResourceService/ResourceNotFoundException.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Exception" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Akshaypandit33&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Akshaypandit33/Advance-LMS.git&quot;,
+    &quot;accountId&quot;: &quot;ae39d34e-b3b8-4dec-9b8a-031e97069fd3&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="309Wdqvmz6mVyMRsYWI2hBRuISa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.generated-requests | #7.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ServiceDiscoveryApplication.executor": "Run",
+    "Spring Boot.TenantCoreApplication.executor": "Run",
+    "Spring Boot.UserManagementServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Advance-LMS/tenant-core/src/main/java/com/lms/tenantcore",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Advance-LMS\tenant-core\src\main\java\com\lms\tenantcore" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lms.tenantcore" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserManagementServiceApplication">
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#7" index="7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ServiceDiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="service-discovery" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lms.servicediscovery.ServiceDiscoveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserManagementServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="UserManagementService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lms.usermanagementservice.UserManagementServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #7" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14156c6a-d163-45f2-89f0-3df1ea66ac7e" name="Changes" comment="" />
+      <created>1753040359056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753040359056</updated>
+      <workItem from="1753040360623" duration="455000" />
+      <workItem from="1753084036527" duration="3393000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
