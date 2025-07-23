@@ -4,7 +4,6 @@ import java.util.UUID;
 
 public record UserRoleRequestDTO(
         UUID userId,
-        UUID roleId,
-        UUID tenantId
+        UUID roleId
 ) {
 }

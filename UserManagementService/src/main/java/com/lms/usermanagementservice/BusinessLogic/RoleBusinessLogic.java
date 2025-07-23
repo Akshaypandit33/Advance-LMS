@@ -17,30 +17,26 @@ public class RoleBusinessLogic {
 
     private final RolesRepository rolesRepository;
 
-    public Roles addRole(RoleRequestDTO roleRequestDTO, UUID tenantId) {
-        boolean exists = rolesRepository.existsByRoleNameAndTenantId(roleRequestDTO.roleName().toUpperCase(), tenantId);
+    public Roles addRole(RoleRequestDTO roleRequestDTO) {
+        boolean exists = rolesRepository.existsByRoleName(roleRequestDTO.roleName().toUpperCase());
         if (exists) {
             throw new RoleAlreadyExistsException("Role Already Exists");
         }
 
         return rolesRepository.save(Roles.builder()
-                        .tenantId(tenantId)
                 .roleName(roleRequestDTO.roleName())
                         .roleDescription(roleRequestDTO.descriptions())
                 .build());
     }
 
-    public List<Roles> findAllRolesOfTenant(UUID tenantId) {
-        return rolesRepository.findByTenantId(tenantId);
+    public List<Roles> findAllRoles() {
+        return rolesRepository.findAll();
     }
 
-    public Roles getRoleById(UUID tenantId, UUID roleId) {
+    public Roles getRoleById( UUID roleId) {
         Roles role = rolesRepository.findById(roleId)
                 .orElseThrow(() -> new RoleNotFoundException("Role not found"));
 
-        if (!role.getTenantId().equals(tenantId)) {
-            throw new RoleNotFoundException("Role not found for your tenant");
-        }
         return role;
     }
 }

@@ -5,6 +5,7 @@ import com.LMS.Constants.DefaultRoles;
 
 import com.LMS.Constants.GlobalConstant;
 import com.LMS.Constants.ResourcesName;
+import com.lms.tenantcore.TenantContext;
 import com.lms.usermanagementservice.Model.Actions;
 import com.lms.usermanagementservice.Model.Permission;
 import com.lms.usermanagementservice.Model.Resource;
@@ -21,6 +22,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
@@ -29,11 +31,9 @@ import java.util.stream.Collectors;
 
 
 
-@Component
-@Order(1)
-
+@Service
 @RequiredArgsConstructor
-public class RolesPermissionSeeder implements CommandLineRunner {
+public class RolesPermissionSeeder  {
     private final RolesRepository rolesRepository;
     private final PermissionRepository permissionRepository;
     private final RolePermissionRepository rolePermissionRepository;
@@ -42,8 +42,9 @@ public class RolesPermissionSeeder implements CommandLineRunner {
 
 
     @Transactional
-    @Override
-    public void run(String... args) throws Exception {
+    public void seedRolePermission(String schemaName) throws Exception {
+
+        TenantContext.setCurrentTenant(schemaName);
 
         // step -1 add actions
         Map<ACTIONS, Actions> actionsMap = seedActions();
@@ -67,7 +68,6 @@ public class RolesPermissionSeeder implements CommandLineRunner {
                             () -> rolePermissionRepository.save(
                                     RolePermission.builder()
                                             .permission(permission)
-                                            .tenantId(GlobalConstant.GLOBAL_TENANT_ID)
                                             .role(superAdminRoles)
                                             .build()
                             )
@@ -171,7 +171,6 @@ public class RolesPermissionSeeder implements CommandLineRunner {
                             Permission.builder()
                                     .actions(action)
                                     .resource(resource)
-                                    .tenantId(GlobalConstant.GLOBAL_TENANT_ID)
                                     .build()
                     );
                 }
@@ -202,7 +201,6 @@ public class RolesPermissionSeeder implements CommandLineRunner {
         List<Roles> rolesToCreate = defaultRoleNames.stream()
                 .filter(roleName -> !existingRolesMap.containsKey(roleName))
                 .map(roleName -> Roles.builder()
-                        .tenantId(GlobalConstant.GLOBAL_TENANT_ID)
                         .roleName(roleName)
                         .roleDescription("DEFAULT DESCRIPTION")
                         .isSystemDefined(Boolean.TRUE)
@@ -245,7 +243,6 @@ public class RolesPermissionSeeder implements CommandLineRunner {
                             if (!alreadyExists) {
                                 toInsert.add(RolePermission.builder()
                                         .role(role)
-                                                .tenantId(GlobalConstant.GLOBAL_TENANT_ID)
                                         .permission(permission)
                                         .build());
                             }

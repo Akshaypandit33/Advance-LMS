@@ -38,14 +38,13 @@ public class PermissionBusinessLogic {
                 .orElseThrow(() -> new ResourceNotFoundException("Invalid resource ID: " + dto.resourceId()));
 
         // Prevent duplicate permission
-        if (permissionRepository.existsByActionsAndResourceAndTenantId(action, resource, tenantId)) {
+        if (permissionRepository.existsByActionsAndResource(action, resource)) {
             throw new PermissionAlreadyExistsException("Permission already exists for action-resource combination.");
         }
 
         Permission permission = Permission.builder()
                 .actions(action)
                 .resource(resource)
-                .tenantId(tenantId)
                 .build();
 
         return permissionRepository.save(permission);

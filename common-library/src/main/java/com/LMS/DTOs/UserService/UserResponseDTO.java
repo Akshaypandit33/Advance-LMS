@@ -6,8 +6,7 @@ import java.util.List;
 import java.util.UUID;
 
 public record UserResponseDTO(
-        UUID uuid,
-        UUID tenantId,
+        UUID userId,
         String firstName,
         String lastName,
         String email,

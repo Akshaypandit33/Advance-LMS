@@ -10,15 +10,6 @@
         <module name="common-library" />
         <module name="service-discovery" />
       </profile>
-      <profile name="Annotation profile for UserManagementService" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
-        <module name="UserManagementService" />
-      </profile>
       <profile name="Annotation profile for tenant-core" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -29,10 +20,21 @@
         </processorPath>
         <module name="tenant-core" />
       </profile>
+      <profile name="Annotation profile for UserManagementService" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="UserManagementService" />
+        <module name="Tenant-Management-Service" />
+      </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Tenant-Management-Service" options="-parameters" />
       <module name="UserManagementService" options="-parameters" />
       <module name="service-discovery" options="-parameters" />
       <module name="tenant-core" options="-parameters" />

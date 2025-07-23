@@ -4,6 +4,7 @@ import com.LMS.Constants.AccountStatus;
 import com.LMS.Constants.DefaultRoles;
 import com.LMS.Constants.GlobalConstant;
 import com.LMS.Exceptions.RoleService.RoleNotFoundException;
+import com.lms.tenantcore.TenantContext;
 import com.lms.usermanagementservice.Model.Roles;
 import com.lms.usermanagementservice.Model.UserRole;
 import com.lms.usermanagementservice.Model.Users;
@@ -17,12 +18,12 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-@Component
-@Order(2)
+@Service
 @RequiredArgsConstructor
-public class SuperAdminSeeder implements CommandLineRunner {
+public class SuperAdminSeeder  {
     private final UserRepository userRepository;
     private final RolesRepository roleRepository;
     private final UserRolesRepository userRoleRepository;
@@ -30,8 +31,8 @@ public class SuperAdminSeeder implements CommandLineRunner {
     private static final Logger log = LoggerFactory.getLogger(SuperAdminSeeder.class);
 
     @Transactional
-    @Override
-    public void run(String... args) throws Exception {
+    public void seedsSuperAdmin(String schemaName) throws Exception {
+        TenantContext.setCurrentTenant(schemaName);
 
         // Check if SuperAdmin user already exists
         if (userRepository.findByEmail(GlobalConstant.SUPER_ADMIN_EMAIL.toLowerCase()).isPresent()) {
@@ -50,7 +51,6 @@ public class SuperAdminSeeder implements CommandLineRunner {
                 .accountStatus(AccountStatus.ACTIVE)
                 .gender("Male")
                 .phoneNumber("123456789")
-                .tenantId(GlobalConstant.GLOBAL_TENANT_ID)
                 .build();
 
         superAdminUser = userRepository.save(superAdminUser);
@@ -64,7 +64,6 @@ public class SuperAdminSeeder implements CommandLineRunner {
         UserRole userRole = UserRole.builder()
                 .user(superAdminUser)
                 .role(superAdminRole)
-                .tenantId(GlobalConstant.GLOBAL_TENANT_ID)
                 .build();
 
         userRoleRepository.save(userRole);

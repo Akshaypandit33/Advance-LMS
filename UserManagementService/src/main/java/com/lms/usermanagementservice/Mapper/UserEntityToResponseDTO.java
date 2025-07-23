@@ -14,7 +14,6 @@ public class UserEntityToResponseDTO implements Function<Users, UserResponseDTO>
     public UserResponseDTO apply(Users user) {
         return new UserResponseDTO(
                 user.getId(),
-                user.getTenantId(),
                 user.getFirstName(),
                 user.getLastName(),
                 user.getEmail(),

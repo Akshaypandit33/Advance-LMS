@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Advance-LMS.iml" filepath="$PROJECT_DIR$/.idea/Advance-LMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UserManagementService/UserManagementService.iml" filepath="$PROJECT_DIR$/UserManagementService/UserManagementService.iml" />
     </modules>
   </component>
 </project>

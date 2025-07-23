@@ -50,6 +50,7 @@ public class ConnectionProvider implements MultiTenantConnectionProvider, Hibern
 
     @Override
     public void releaseConnection(Object tenantIdentifier, Connection connection) throws SQLException {
+        connection.setSchema("public");
         connection.close();
     }
 

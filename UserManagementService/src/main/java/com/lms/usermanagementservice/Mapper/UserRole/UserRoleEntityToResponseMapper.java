@@ -14,9 +14,12 @@ public class UserRoleEntityToResponseMapper implements Function<UserRole, UserRo
                 userRole.getId(),
                 userRole.getUser().getId(),
                 userRole.getUser().getFirstName() + " "+ userRole.getUser().getLastName(),
+
                 userRole.getRole().getId(),
                 userRole.getRole().getRoleName(),
-                userRole.getTenantId()
+                userRole.getUser().getId(),
+                userRole.getAssignedAt()
+
 
         );
     }

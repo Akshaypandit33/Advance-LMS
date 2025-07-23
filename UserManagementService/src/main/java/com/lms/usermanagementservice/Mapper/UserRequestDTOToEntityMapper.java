@@ -20,7 +20,7 @@ public class UserRequestDTOToEntityMapper  {
                         .password(encodedPassword)
                         .email(userRequestDTO.email())
                         .gender(userRequestDTO.gender())
-                        .tenantId(userRequestDTO.tenantId())
+
                         .phoneNumber(userRequestDTO.phoneNumber())
                         .accountStatus(userRequestDTO.accountStatus())
                         .build();

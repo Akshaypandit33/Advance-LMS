@@ -15,7 +15,6 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@FilterDef(name = "tenantFilter", parameters = {@ParamDef(name = "tenantId", type = UUID.class)})
 
 public abstract class BaseClass {
 
@@ -23,12 +22,13 @@ public abstract class BaseClass {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column(name = "tenant_id", nullable = false)
-    private UUID tenantId;
 
+
+    @Column(name = "created_at")
     @CreationTimestamp
     private ZonedDateTime createdAt;
 
+    @Column(name = "updated_at")
     @UpdateTimestamp
     private ZonedDateTime updatedAt;
 }

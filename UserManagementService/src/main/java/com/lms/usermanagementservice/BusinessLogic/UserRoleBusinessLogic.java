@@ -44,7 +44,6 @@ public class UserRoleBusinessLogic {
                         UserRole.builder()
                                 .user(user)
                                 .role(role)
-                                .tenantId(user.getTenantId())
                                 .build()
                 )
         );

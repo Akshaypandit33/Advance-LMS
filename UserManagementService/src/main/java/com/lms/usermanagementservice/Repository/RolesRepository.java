@@ -12,14 +12,12 @@ import java.util.UUID;
 @Repository
 public interface RolesRepository extends JpaRepository<Roles, UUID> {
 
-    Optional<Roles> findByRoleNameAndTenantId(String roleName, UUID tenantId);
+    Optional<Roles> findByRoleName(String roleName);
 
-    Optional<Roles> findByRoleName(String name);
 
     List<Roles> findByRoleNameIn(List<String> RoleNames);
 
-    boolean existsByRoleNameAndTenantId(String roleName, UUID tenantId);
+    boolean existsByRoleName(String roleName);
 
-    List<Roles> findByTenantId(UUID tenantId);
 
 }

@@ -22,18 +22,35 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
-@Filter(name = "tenantFilter",condition = "tenant_id = :tenantId")
+@Table(
+        name = "users",
+        indexes = {
+                @Index(name = "idx_users_email", columnList = "email"),
+                @Index(name = "idx_users_account_status", columnList = "account_status"),
+                @Index(name = "idx_users_created_at", columnList = "created_at")
+        }
+)
 public class Users extends BaseClass {
 
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
 
-    @Column(unique = true)
+    @Column(name = "email", unique = true)
     private String email;
+
+    @Column(name = "password")
     private String password;
+
+    @Column(name = "phone_number", length = 20)
     private String phoneNumber;
+
+    @Column(name = "gender", length = 20)
     private String gender;
 
+    @Column(name = "account_status", length = 20)
     @Enumerated(EnumType.STRING)
     private AccountStatus accountStatus = AccountStatus.ACTIVE;
 

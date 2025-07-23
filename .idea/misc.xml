@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/UserManagementService/pom.xml" />
         <option value="$PROJECT_DIR$/tenant-core/pom.xml" />
         <option value="$PROJECT_DIR$/service-discovery/pom.xml" />
+        <option value="$PROJECT_DIR$/Tenant-Management-Service/pom.xml" />
       </list>
     </option>
   </component>
