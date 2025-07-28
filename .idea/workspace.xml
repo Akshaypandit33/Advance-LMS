@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14156c6a-d163-45f2-89f0-3df1ea66ac7e" name="Changes" comment="on tenant creation automatically schema creation is created">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/TestingEndoints/TenantService.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Config/UserManagementJpaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserService.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/http-client.env.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Config/AbstractMultiTenantJpaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-07-21T132109.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-07-21T132117.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Mapper/TenantMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Mapper/TenantMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Model/Tenants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Model/Tenants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Service/Impl/TenantServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Service/Impl/TenantServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserBusinessLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-library/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/TenantDTO/RegisterTenantRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/TenantDTO/RegisterTenantRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/TenantDTO/TenantResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/TenantDTO/TenantResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenant-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/HibernateConfig/ConnectionProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/HibernateConfig/ConnectionProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/HibernateConfig/TenantIdentifierResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/HibernateConfig/TenantIdentifierResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Resolver/HttpHeaderTenantResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Resolver/HttpHeaderTenantResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/TenantContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/TenantContext.java" afterDir="false" />
-    </list>
+    <list default="true" id="14156c6a-d163-45f2-89f0-3df1ea66ac7e" name="Changes" comment="tenant-core documented properly" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -235,7 +202,7 @@
       <workItem from="1753262905892" duration="1262000" />
       <workItem from="1753285708001" duration="2363000" />
       <workItem from="1753341552992" duration="6798000" />
-      <workItem from="1753721792920" duration="3224000" />
+      <workItem from="1753721792920" duration="3931000" />
     </task>
     <task id="LOCAL-00001" summary="tenat isolation strategy completed">
       <option name="closed" value="true" />
@@ -261,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753264157107</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tenant-core documented properly">
+      <option name="closed" value="true" />
+      <created>1753725165417</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753725165417</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +245,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tenat isolation strategy completed" />
     <MESSAGE value="on tenant creation automatically schema creation is created" />
-    <option name="LAST_COMMIT_MESSAGE" value="on tenant creation automatically schema creation is created" />
+    <MESSAGE value="tenant-core documented properly" />
+    <option name="LAST_COMMIT_MESSAGE" value="tenant-core documented properly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

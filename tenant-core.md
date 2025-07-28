@@ -1,5 +1,7 @@
 # Tenant-Core Library
 
+![Java](https://img.shields.io/badge/language-Java21-blue) ![SpringBoot](https://img.shields.io/badge/spring--boot-3.5-green) ![PostgreSQL](https://img.shields.io/badge/database-PostgreSQL-blue) ![Version](https://img.shields.io/badge/version-1.0.0-yellow)
+
 ## Overview
 
 **tenant-core** is a shared Java library designed to provide multi-tenancy support with schema-per-tenant architecture for Spring Boot microservices. This library eliminates code duplication across microservices by centralizing tenant management, database schema switching, and HTTP request interception.
