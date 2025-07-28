@@ -9,6 +9,6 @@ import org.springframework.stereotype.Component;
 public class HttpHeaderTenantResolver implements TenantResolver<HttpServletRequest>{
     @Override
     public String resolveTenantId(HttpServletRequest request) {
-        return request.getHeader(GlobalConstant.HEADER_TENANT_ID);
+        return request.getHeader(GlobalConstant.HEADER_TENANT_ID).toLowerCase();
     }
 }

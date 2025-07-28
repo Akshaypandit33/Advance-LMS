@@ -4,64 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14156c6a-d163-45f2-89f0-3df1ea66ac7e" name="Changes" comment="tenat isolation strategy completed">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kafka-Compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Controller/TenantController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Kafka/TenantEventProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Mapper/TenantMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Model/Tenants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Repository/TenantRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Service/Impl/TenantServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Service/TenantService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Kafka/Config/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Kafka/Config/TenantEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_1__Create_actions_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_3__Create_users_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_4__Create_roles_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_5__Create_permissions_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_6__Create_user_roles_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_7__Create_role_permissions_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Constants/TenantStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/TenantDTO/RegisterTenantRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/TenantDTO/TenantResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Kafka/KafkaTopics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Kafka/TenantAddedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/TenantSchemaInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="14156c6a-d163-45f2-89f0-3df1ea66ac7e" name="Changes" comment="on tenant creation automatically schema creation is created">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/TestingEndoints/TenantService.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Config/UserManagementJpaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserService.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/http-client.env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Config/AbstractMultiTenantJpaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-07-21T132109.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-07-21T132117.500.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/TenantManagementServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/TenantManagementServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/PermissionBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/PermissionBusinessLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/RoleBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/RoleBusinessLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserRoleBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserRoleBusinessLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserEntityToResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserEntityToResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRequestDTOToEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRequestDTOToEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRole/UserRoleEntityToResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRole/UserRoleEntityToResponseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Permission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/RolePermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/RolePermission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/PermissionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/PermissionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolesRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Seeder/RolesPermissionSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Seeder/RolesPermissionSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Seeder/SuperAdminSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Seeder/SuperAdminSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Mapper/TenantMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Mapper/TenantMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Model/Tenants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Model/Tenants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Service/Impl/TenantServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Service/Impl/TenantServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserBusinessLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRoleRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRoleRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRoleResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRoleResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/TenantDTO/RegisterTenantRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/TenantDTO/RegisterTenantRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/TenantDTO/TenantResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/TenantDTO/TenantResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenant-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/HibernateConfig/ConnectionProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/HibernateConfig/ConnectionProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/HibernateConfig/TenantIdentifierResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/HibernateConfig/TenantIdentifierResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Resolver/HttpHeaderTenantResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Resolver/HttpHeaderTenantResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/TenantContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/TenantContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +50,7 @@
         <option value="Enum" />
         <option value="Record" />
         <option value="Interface" />
+        <option value="HTTP Public Environment File" />
         <option value="Class" />
       </list>
     </option>
@@ -113,45 +89,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.Kafka-Compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #10.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #7.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #9.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ServiceDiscoveryApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.TenantCoreApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.TenantManagementServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserManagementServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Advance-LMS/tenant-core/src/main/java/com/lms/tenantcore&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.Kafka-Compose.yml: Compose Deployment.executor": "Run",
+    "HTTP Request.TenantService | #1.executor": "Run",
+    "HTTP Request.UserService | #1.executor": "Run",
+    "HTTP Request.UserService | get all users.executor": "Run",
+    "HTTP Request.generated-requests | #10.executor": "Run",
+    "HTTP Request.generated-requests | #7.executor": "Run",
+    "HTTP Request.generated-requests | #9.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ServiceDiscoveryApplication.executor": "Run",
+    "Spring Boot.TenantCoreApplication.executor": "Run",
+    "Spring Boot.TenantManagementServiceApplication.executor": "Run",
+    "Spring Boot.UserManagementServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Advance-LMS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "AtomSelectConfig",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Advance-LMS" />
       <recent name="D:\Advance-LMS\tenant-core\src\main\java\com\lms\tenantcore" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -171,11 +155,17 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #10">
-    <configuration name="generated-requests | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#10" index="10" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.UserService | get all users">
+    <configuration name="TenantService | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/TestingEndoints/TenantService.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#7" index="7" runType="Run single request">
+    <configuration name="UserService | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserService.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="UserService | get all users" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserService.http" executionIdentifier="get all users" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#10" index="10" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#9" index="9" runType="Run single request">
@@ -205,14 +195,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Kafka-Compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="Kafka-Compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -221,10 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.UserService | get all users" />
+        <item itemvalue="HTTP Request.UserService | #1" />
+        <item itemvalue="HTTP Request.TenantService | #1" />
         <item itemvalue="HTTP Request.generated-requests | #10" />
         <item itemvalue="HTTP Request.generated-requests | #9" />
-        <item itemvalue="Docker.Kafka-Compose.yml: Compose Deployment" />
-        <item itemvalue="HTTP Request.generated-requests | #7" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +232,10 @@
       <workItem from="1753117376295" duration="711000" />
       <workItem from="1753122295872" duration="6634000" />
       <workItem from="1753250492410" duration="8644000" />
-      <workItem from="1753262905892" duration="1177000" />
+      <workItem from="1753262905892" duration="1262000" />
+      <workItem from="1753285708001" duration="2363000" />
+      <workItem from="1753341552992" duration="6798000" />
+      <workItem from="1753721792920" duration="3224000" />
     </task>
     <task id="LOCAL-00001" summary="tenat isolation strategy completed">
       <option name="closed" value="true" />
@@ -267,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753087798471</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="on tenant creation automatically schema creation is created">
+      <option name="closed" value="true" />
+      <created>1753264157107</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753264157107</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +269,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tenat isolation strategy completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="tenat isolation strategy completed" />
+    <MESSAGE value="on tenant creation automatically schema creation is created" />
+    <option name="LAST_COMMIT_MESSAGE" value="on tenant creation automatically schema creation is created" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java</url>
+          <line>28</line>
+          <properties class="com.lms.usermanagementservice.Service.ServiceImpl.UserServiceImpl" method="createUser">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

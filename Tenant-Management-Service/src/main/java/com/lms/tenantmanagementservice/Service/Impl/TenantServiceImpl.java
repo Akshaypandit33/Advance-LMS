@@ -36,6 +36,7 @@ public class TenantServiceImpl implements TenantService {
                     newTenant.setCollegeCode(normalizedCode);
                     return tenantRepository.save(newTenant);
                 });
+
         TenantAddedEvent tenantAddedEvent = new TenantAddedEvent(
                 savedTenant.getId().toString(),
                 savedTenant.getName(),

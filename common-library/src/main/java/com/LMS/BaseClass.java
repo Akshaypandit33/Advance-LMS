@@ -22,8 +22,6 @@ public abstract class BaseClass {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-
-
     @Column(name = "created_at")
     @CreationTimestamp
     private ZonedDateTime createdAt;

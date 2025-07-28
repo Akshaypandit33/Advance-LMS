@@ -1,15 +1,18 @@
 package com.lms.usermanagementservice.Controller;
 
-import com.LMS.Constants.GlobalConstant;
+
 import com.LMS.DTOs.UserService.UserRequestDTO;
 import com.LMS.DTOs.UserService.UserResponseDTO;
 import com.lms.tenantcore.TenantContext;
 import com.lms.usermanagementservice.Service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.http.ResponseEntity;
+
+import org.springframework.data.domain.Pageable;
+
 import org.springframework.web.bind.annotation.*;
+
+import java.util.UUID;
 
 
 @RestController
@@ -18,22 +21,61 @@ import org.springframework.web.bind.annotation.*;
 public class UserServiceController {
 
     private final UserService userService;
-    private final String TenantIdHeader = GlobalConstant.HEADER_TENANT_ID;
-    @PostMapping("/createUser")
-    public ResponseEntity<UserResponseDTO> createUser(@RequestBody UserRequestDTO userRequestDTO
-
-        ) {
-        return ResponseEntity.ok(userService.createUser(userRequestDTO));
+    // 1. Create user
+    @PostMapping
+    public UserResponseDTO createUser(@RequestBody UserRequestDTO request) {
+        return userService.createUser(request);
     }
 
-    @GetMapping("/ping")
-    public ResponseEntity<String> ping() {
-        return ResponseEntity.ok("pong");
+    // 2. Update user by email (if you don't have userId)
+    @PutMapping("/{email}")
+    public UserResponseDTO updateUser(
+            @PathVariable String email,
+            @RequestBody UserRequestDTO request
+    ) {
+        return userService.updateUser(request, email);
     }
 
-    @GetMapping()
-    public ResponseEntity<Page<UserResponseDTO>> getAllUsers() {
-        return ResponseEntity.ok(userService.getAllUsers(PageRequest.of(0, 10)));
+    // 3. Get all users (with pagination)
+    @GetMapping
+    public Page<UserResponseDTO> getAllUsers(Pageable pageable) {
+        return userService.findAllUsers(pageable);
+    }
+
+    // 4. Search users (with pagination)
+    @GetMapping("/search")
+    public Page<UserResponseDTO> searchUsers(
+            @RequestParam("q") String keyword,
+            Pageable pageable
+    ) {
+        return userService.searchUsers(pageable, keyword);
+    }
+
+    // 5. Get user by ID
+    @GetMapping("/{id}")
+    public UserResponseDTO getUserById(@PathVariable UUID id) {
+        return userService.findUserById(id);
+    }
+
+    // 6. Get user by Email
+    @GetMapping("/by-email/{email}")
+    public UserResponseDTO getUserByEmail(@PathVariable String email) {
+        return userService.findUserByEmail(email);
+    }
+
+    // 7. Change user account status
+    @PatchMapping("/{id}/status")
+    public UserResponseDTO changeAccountStatus(
+            @PathVariable UUID id,
+            @RequestParam String status
+    ) {
+        return userService.changeAccountStatus(id, status);
+    }
+
+    // 8. Delete user
+    @DeleteMapping("/{id}")
+    public void deleteUser(@PathVariable UUID id) {
+        userService.deleteUser(id);
     }
 
     @GetMapping("/getHeaders")

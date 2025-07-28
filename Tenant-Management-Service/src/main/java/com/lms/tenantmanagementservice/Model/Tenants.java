@@ -1,6 +1,10 @@
 package com.lms.tenantmanagementservice.Model;
 
 import com.LMS.Constants.TenantStatus;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -27,8 +31,8 @@ public class Tenants {
 
     private String logoUrl;
 
-    @Column(columnDefinition = "jsonb")
-    private String theme;  // Store as JSON: { "primary": "#1a1a1a", "accent": "#007bff", ... }
+
+//    private String theme;  // Store as JSON: { "primary": "#1a1a1a", "accent": "#007bff", ... }
 
 
     @Column(unique = true)

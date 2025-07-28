@@ -1,5 +1,6 @@
 package com.lms.usermanagementservice.BusinessLogic;
 
+import com.LMS.Constants.AccountStatus;
 import com.LMS.DTOs.UserService.UserRequestDTO;
 import com.LMS.DTOs.UserService.UserResponseDTO;
 import com.LMS.Exceptions.UserService.EmailAlreadyExistsException;
@@ -45,6 +46,41 @@ public class UserBusinessLogic {
 
     }
 
+    @Transactional
+    public Users updateUser(UserRequestDTO userRequestDTO, String email) {
+        Users user = userRepository.findByEmail(email.toLowerCase()).orElseThrow(
+                () -> new UserNotFoundException("User not found" + email)
+        );
+
+        return null;
+    }
+
+    public Users getUserById(UUID id) {
+        return userRepository.findById(id).orElseThrow(
+                () -> new UserNotFoundException("User not found" + id)
+        );
+    }
+    public Users getUserByEmail(String email) {
+        return userRepository.findByEmail(email.toLowerCase()).orElseThrow(
+                () -> new UserNotFoundException("User not found" + email)
+        );
+    }
+    public void deleteUser(UUID id) {
+        userRepository.deleteById(id);
+    }
+
+    public Users changeAccountStatus(UUID id, String status) {
+        Users user = getUserById(id);
+        user.setAccountStatus(AccountStatus.valueOf(status.toUpperCase()));
+
+        return userRepository.save(user);
+
+
+    }
+
+    public Page<Users> searchUsers(Pageable pageable, String query) {
+        return  userRepository.searchUsers(query,pageable);
+    }
     public Page<Users> findAllUsers(Pageable pageable) {
         return userRepository.findAll(pageable);
     }

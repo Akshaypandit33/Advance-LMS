@@ -1,6 +1,7 @@
 package com.lms.tenantcore.HibernateConfig;
 
 import com.LMS.Exceptions.TenantService.TenantNotFoundExceptions;
+import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.cfg.AvailableSettings;
 import org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider;
@@ -35,7 +36,9 @@ public class ConnectionProvider implements MultiTenantConnectionProvider, Hibern
 
     @Override
     public Connection getConnection(Object tenantIdentifier) throws SQLException {
-        String tenant = (String) tenantIdentifier;
+
+        logger.info(">>> Requested connection for tenant: {}", tenantIdentifier);
+        String tenant = (String.valueOf(tenantIdentifier).toLowerCase()) ;
         Connection connection = dataSource.getConnection();
 
         if(!schemaExists(connection, tenant))
@@ -43,8 +46,15 @@ public class ConnectionProvider implements MultiTenantConnectionProvider, Hibern
             connection.close();
             throw new TenantNotFoundExceptions("Schema for tenant "+tenant+" not exists");
         }
-        connection.setSchema(tenant);
-        logger.info(" Switched to schema: " + tenant);
+        try {
+            connection.setSchema(tenant);
+        } catch (SQLException e) {
+            logger.error("Error setting schema to {}: {}", tenant, e.getMessage());
+            connection.close();
+            throw new TenantNotFoundExceptions("Failed to switch schema to tenant: " + tenant);
+        }
+
+        logger.info("Switched to tenant schema: {}", tenant);
         return connection;
     }
 
@@ -86,4 +96,10 @@ public class ConnectionProvider implements MultiTenantConnectionProvider, Hibern
             return false;
         }
     }
+
+    @PostConstruct
+    public void init() {
+        logger.info("TenantIdentifierResolver initialized");
+    }
+
 }

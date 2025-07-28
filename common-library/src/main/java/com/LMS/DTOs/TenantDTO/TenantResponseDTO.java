@@ -1,5 +1,6 @@
 package com.LMS.DTOs.TenantDTO;
 
+
 import java.time.ZonedDateTime;
 import java.util.UUID;
 
@@ -12,7 +13,6 @@ public record TenantResponseDTO(
         String schemaName,
         String status,
         String logoUrl,
-        String theme,
         ZonedDateTime addedAt
 ) {
 }

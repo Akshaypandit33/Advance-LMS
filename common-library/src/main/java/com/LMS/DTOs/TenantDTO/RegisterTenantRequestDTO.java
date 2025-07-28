@@ -8,7 +8,6 @@ public record RegisterTenantRequestDTO(
         String phoneNumber,
         String schemaName,
         String logoUrl,
-        String theme,
         String status
 ) {
 }

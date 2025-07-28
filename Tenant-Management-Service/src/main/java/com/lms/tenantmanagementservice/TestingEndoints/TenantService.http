@@ -1,0 +1,15 @@
+@baseUrl = http://localhost:8083
+
+## add tenant
+POST {{baseUrl}}/api/v1/tenants
+Content-Type: application/json
+
+{
+  "name": "Noida Institute Of Engineering and Technology",
+  "collegeCode": "NIET",
+  "email": "niet@gmail.com",
+  "phoneNumber": "1234567890",
+  "schemaName": "NIET_00",
+  "logoUrl": "logoUrl",
+  "status": "ACTIVE"
+}

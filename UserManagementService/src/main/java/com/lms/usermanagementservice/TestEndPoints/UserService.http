@@ -1,0 +1,26 @@
+
+@baseUrl= http://localhost:8082/v1/users
+//
+
+## Add User
+
+POST {{baseUrl}}
+Content-Type: application/json
+X-Tenant-Id:niet_00
+
+{
+  "firstName": "aditya",
+  "lastName": "kumar",
+  "email": "aditya@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "104632dd-ee6f-48ef-bfc0-7ac6817d056e"
+  ]
+}
+
+### get all users
+GET {{baseUrl}}
+X-Tenant-Id:LMS_LMS0001

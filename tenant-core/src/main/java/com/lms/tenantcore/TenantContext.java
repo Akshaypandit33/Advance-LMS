@@ -11,7 +11,7 @@ public class TenantContext {
 
     public static void setCurrentTenant(String value) {
         logger.info("Setting Current tenant is {}", value);
-        currentTenant.set(value);
+        currentTenant.set(value.toLowerCase());
     }
 
     public static String getCurrentTenant() {

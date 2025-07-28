@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Advance-LMS.iml" filepath="$PROJECT_DIR$/.idea/Advance-LMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tenant-Management-Service/Tenant-Management-Service.iml" filepath="$PROJECT_DIR$/Tenant-Management-Service/Tenant-Management-Service.iml" />
       <module fileurl="file://$PROJECT_DIR$/UserManagementService/UserManagementService.iml" filepath="$PROJECT_DIR$/UserManagementService/UserManagementService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-discovery/service-discovery.iml" filepath="$PROJECT_DIR$/service-discovery/service-discovery.iml" />
     </modules>
   </component>
 </project>

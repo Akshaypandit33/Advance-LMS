@@ -1,3 +1,655 @@
+GET http://localhost:8082/v1/users
+X-Tenant-Id: LMS_LMS0001
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-24T144059.500.json
+
+###
+
+GET http://localhost:8082/v1/users
+X-Tenant-Id: LMS_LMS0001
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-24T144027.500.json
+
+###
+
+GET http://localhost:8082/v1/users
+X-Tenant-Id: LMS_LMS000
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-24T144007.200.json
+
+###
+
+GET http://localhost:8082/v1/users
+X-Tenant-Id: LMS_LMS000
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-24T143652.200.json
+
+###
+
+GET http://localhost:8082/v1/users
+X-Tenant-Id: LMS_LMS000
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-24T143630.500.json
+
+###
+
+GET http://localhost:8082/v1/users
+X-Tenant-Id: LMS_LMS000
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-24T143601.500.json
+
+###
+
+GET http://localhost:8082/v1/users
+X-Tenant-Id: LMS_LMS000
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-24T143353.500.json
+
+###
+
+GET http://localhost:8082/v1/users
+X-Tenant-Id: niet_00
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-24T143328.200.json
+
+###
+
+GET http://localhost:8082/v1/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-24T143233.500.json
+
+###
+
+GET http://localhost:8082/
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-24T143215.500.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: niet_00
+Content-Length: 254
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "aditya",
+  "lastName": "kumar",
+  "email": "aditya@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "104632dd-ee6f-48ef-bfc0-7ac6817d056e"
+  ]
+}
+
+<> 2025-07-24T143006.200.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: niet_00
+Content-Length: 254
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "aditya",
+  "lastName": "kumar",
+  "email": "aditya@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "516ddeec-0607-4092-819a-95bc2dc88dcd"
+  ]
+}
+
+<> 2025-07-24T142944.404.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: lms_lms000
+Content-Length: 251
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "ankit",
+  "lastName": "kumar",
+  "email": "aa33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "516ddeec-0607-4092-819a-95bc2dc88dcd"
+  ]
+}
+
+<> 2025-07-24T142907.200.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: lms_lms000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "516ddeec-0607-4092-819a-95bc2dc88dcd"
+  ]
+}
+
+<> 2025-07-24T142842.409.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: lms_lms000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "516ddeec-0607-4092-819a-95bc2dc88dcd"
+  ]
+}
+
+<> 2025-07-24T142837.200.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: lms_lms000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
+
+<> 2025-07-24T142738.404.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: LMS_LMS000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
+
+<> 2025-07-24T142715.500.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: LMS000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
+
+<> 2025-07-24T142524.500.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: LMS000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
+
+<> 2025-07-24T142158.500.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: LMS000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
+
+<> 2025-07-24T141943.500.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: LMS000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
+
+<> 2025-07-24T140938.500.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: LMS000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
+
+<> 2025-07-24T140837.500.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: LMS000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
+
+<> 2025-07-24T140755.500.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: LMS000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
+
+<> 2025-07-24T140505.500.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: LMS000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
+
+<> 2025-07-24T140433.500.json
+
+###
+
+POST http://localhost:8082/v1/users
+Content-Type: application/json
+X-Tenant-Id: LMS000
+Content-Length: 262
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "akshay",
+  "lastName": "kumar",
+  "email": "akshaypandit33@gmail.com",
+  "password": "password@123",
+  "phoneNumber": "9999999999",
+  "gender": "Male",
+  "accountStatus": "ACTIVE",
+  "rolesId": [
+    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  ]
+}
+
+<> 2025-07-24T140421.500.json
+
+###
+
+POST http://localhost:8083/api/v1/tenants
+Content-Type: application/json
+Content-Length: 219
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Noida Institute Of Engineering and Technology",
+  "collegeCode": "NIET",
+  "email": "niet@gmail.com",
+  "phoneNumber": "1234567890",
+  "schemaName": "NIET_00",
+  "logoUrl": "logoUrl",
+  "status": "ACTIVE"
+}
+
+<> 2025-07-24T140232.200.json
+
+###
+
+POST http://localhost:8083/api/v1/tenants
+Content-Type: application/json
+Content-Length: 219
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Noida Institute Of Engineering and Technology",
+  "collegeCode": "NIET",
+  "email": "niet@gmail.com",
+  "phoneNumber": "1234567890",
+  "schemaName": "NIET_00",
+  "logoUrl": "logoUrl",
+  "status": "ACTIVE"
+}
+
+<> 2025-07-24T140229.200.json
+
+###
+
+POST http://localhost:8083/api/v1/tenants
+Content-Type: application/json
+Content-Length: 181
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "LMS",
+  "collegeCode": "LMS000",
+  "email": "lms@gmail.com",
+  "phoneNumber": "1234567890",
+  "schemaName": "LMS_LMS000",
+  "logoUrl": "logoUrl",
+  "status": "ACTIVE"
+}
+
+<> 2025-07-24T140047.200.json
+
+###
+
+POST http://localhost:8083/api/v1/tenants
+Content-Type: application/json
+Content-Length: 181
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "LMS",
+  "collegeCode": "LMS000",
+  "email": "lms@gmail.com",
+  "phoneNumber": "1234567890",
+  "schemaName": "LMS_LMS000",
+  "logoUrl": "logoUrl",
+  "status": "ACTIVE"
+}
+
+<> 2025-07-24T135747.200.json
+
+###
+
+POST http://localhost:8083/api/v1/tenants
+Content-Type: application/json
+Content-Length: 290
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "LMS",
+  "collegeCode": "LMS000",
+  "email": "lms@gmail.com",
+  "phoneNumber": "1234567890",
+  "schemaName": "LMS_LMS000",
+  "logoUrl": "logoUrl",
+  "theme": {
+    "primary": "primary color",
+    "accent": "accent value",
+    "background": "bg color"
+  },
+  "status": "ACTIVE"
+}
+
+<> 2025-07-24T134642.500.json
+
+###
+
+POST http://localhost:8083/api/v1/tenants
+Content-Type: application/json
+Content-Length: 203
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "LMS",
+  "collegeCode": "LMS000",
+  "email": "lms@gmail.com",
+  "phoneNumber": "1234567890",
+  "schemaName": "LMS_LMS000",
+  "logoUrl": "logoUrl",
+  "theme": "{theme}",
+  "status": "ACTIVE"
+}
+
+<> 2025-07-24T131344.500.json
+
+###
+
+POST http://localhost:8083/api/v1/tenants
+Content-Type: application/json
+Content-Length: 203
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "LMS",
+  "collegeCode": "LMS000",
+  "email": "lms@gmail.com",
+  "phoneNumber": "1234567890",
+  "schemaName": "LMS_LMS000",
+  "logoUrl": "logoUrl",
+  "theme": "{theme}",
+  "status": "ACTIVE"
+}
+
+<> 2025-07-24T131142.500.json
+
+###
+
 GET http://localhost:8083/api/v1/tenants/testKafka
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -118,68 +770,6 @@ Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
 
 <> 2025-07-22T002120.400.json
-
-###
-
-POST http://localhost:8083/api/v1/tenants/testKafka
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-07-22T001944.405.json
-
-###
-
-GET http://localhost:8082/v1/users/getHeaders
-X-Tenant-Id: NIET
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-###
-
-GET http://localhost:8082/v1/users/getHeaders
-X-Tenant-Id: NIET
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-###
-
-GET http://localhost:8082/v1/users/getHeaders
-X-Tenant-Id: NIET
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-###
-
-GET http://localhost:8082/v1/users/getHeaders
-X-Tenant-Id: NIET
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-###
-
-GET http://localhost:8082/v1/users/getHeaders
-X-Tenant-Id: NIET
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-07-21T132117.500.json
-
-###
-
-GET http://localhost:8082/v1/users/getHeaders
-X-Tenant-Id: NIET
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-07-21T132109.500.json
 
 ###
 
