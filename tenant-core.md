@@ -4,7 +4,7 @@
 
 ## Overview
 
-**tenant-core** is a shared Java library designed to provide multi-tenancy support with schema-per-tenant architecture for Spring Boot microservices. This library eliminates code duplication across microservices by centralizing tenant management, database schema switching, and HTTP request interception.
+**tenant-core** is a shared Java library designed to provide multi-tenancy support with **schema-per-tenant** architecture for Spring Boot microservices. This library eliminates code duplication across microservices by centralizing tenant management, database schema switching, and HTTP request interception.
 
 ## Table of Contents
 

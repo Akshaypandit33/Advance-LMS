@@ -15,6 +15,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Map;
 import java.util.UUID;
 
 @Service
@@ -36,7 +37,7 @@ public class UserServiceImpl implements UserService {
         // assigning role to user if the list of Roles is not empty
         userRoleBusinessLogic.assignMultipleRoleToUser(
                 user.getId(),
-                userRequestDTO.rolesId()
+                userRequestDTO.roles()
 
         );
         return userEntityToResponseDTO.apply(userBusinessLogic.findUserById(user.getId()));
@@ -75,8 +76,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void deleteUser(UUID userId) {
-        userBusinessLogic.deleteUser(userId);
+    public Map<String, String> deleteUser(UUID userId) {
+        return userBusinessLogic.deleteUser(userId);
+
     }
 
 

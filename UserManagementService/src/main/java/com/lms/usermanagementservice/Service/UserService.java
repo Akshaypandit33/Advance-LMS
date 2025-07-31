@@ -6,6 +6,7 @@ import com.lms.usermanagementservice.Model.Users;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.Map;
 import java.util.UUID;
 
 public interface UserService {
@@ -17,5 +18,5 @@ public interface UserService {
     UserResponseDTO findUserById(UUID id);
     UserResponseDTO findUserByEmail(String email);
     UserResponseDTO changeAccountStatus(UUID userId, String status);
-    void deleteUser(UUID userId);
+    Map<String, String> deleteUser(UUID userId);
 }

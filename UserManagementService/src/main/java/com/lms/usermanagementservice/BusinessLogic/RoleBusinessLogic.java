@@ -6,9 +6,13 @@ import com.LMS.Exceptions.RoleService.RoleNotFoundException;
 import com.lms.usermanagementservice.Model.Roles;
 import com.lms.usermanagementservice.Repository.RolesRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 @RequiredArgsConstructor
@@ -29,8 +33,8 @@ public class RoleBusinessLogic {
                 .build());
     }
 
-    public List<Roles> findAllRoles() {
-        return rolesRepository.findAll();
+    public Page<Roles> findAllRoles(Pageable pageable) {
+        return rolesRepository.findAll(pageable);
     }
 
     public Roles getRoleById( UUID roleId) {
@@ -38,5 +42,21 @@ public class RoleBusinessLogic {
                 .orElseThrow(() -> new RoleNotFoundException("Role not found"));
 
         return role;
+    }
+
+   public Map<String,String> deleteRole(UUID roleId) {
+        Roles role = getRoleById(roleId);
+        rolesRepository.deleteById(roleId);
+        Map<String,String> map = new HashMap<>();
+        map.put("status","success");
+        map.put("roleName","Role - "+role.getRoleName()+"deleted successfully");
+        return map;
+    }
+
+    public Roles findRoleByName(String roleName) {
+        return rolesRepository.findByRoleName(roleName.toUpperCase())
+                .orElseThrow(
+                        () -> new RoleNotFoundException("Role not found")
+                );
     }
 }

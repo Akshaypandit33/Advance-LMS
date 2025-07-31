@@ -13,12 +13,15 @@ import com.lms.usermanagementservice.Model.Users;
 import com.lms.usermanagementservice.Repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 
+import org.apache.catalina.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -62,11 +65,19 @@ public class UserBusinessLogic {
     }
     public Users getUserByEmail(String email) {
         return userRepository.findByEmail(email.toLowerCase()).orElseThrow(
-                () -> new UserNotFoundException("User not found" + email)
+                () -> new UserNotFoundException("User not found " + email)
         );
     }
-    public void deleteUser(UUID id) {
+    public Map<String,String> deleteUser(UUID id)
+    {
+        Users user = userRepository.findById(id).orElseThrow(
+                () -> new UserNotFoundException("User not found" + id)
+        );
         userRepository.deleteById(id);
+        Map<String,String> map = new HashMap<>();
+        map.put("status","success");
+        map.put("message","User deleted successfully with id: " + id);
+        return map;
     }
 
     public Users changeAccountStatus(UUID id, String status) {
@@ -86,11 +97,11 @@ public class UserBusinessLogic {
     }
 
     public Users findUserById(UUID id) {
-
         return userRepository.findById(id).orElseThrow(
                 () -> new UserNotFoundException("User Not Found")
         );
     }
+
 
 
 }

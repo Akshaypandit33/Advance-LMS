@@ -1,0 +1,28 @@
+@baseUrl=http://localhost:8082/v1/user-roles
+@tenantId=niet_00
+### assign userRole
+POST {{baseUrl}}
+X-Tenant-Id: {{tenantId}}
+Content-Type: application/json
+
+{
+  "userId": "6456c55f-f821-4077-bb33-849b6073d4d5",
+  "roleName": "student"
+}
+
+### get all
+GET {{baseUrl}}/all
+X-Tenant-Id: {{tenantId}}
+
+###  List Roles of a User
+GET {{baseUrl}}/user/{{userId}}
+X-Tenant-Id: {{tenantId}}
+
+### get All users from roleName
+GET {{baseUrl}}/role/student
+X-Tenant-Id: {{tenantId}}
+
+### revoke the user role
+@userId=6456c55f-f821-4077-bb33-849b6073d4d5
+DELETE {{baseUrl}}/user/{{userId}}?roleName=student
+X-Tenant-Id: {{tenantId}}

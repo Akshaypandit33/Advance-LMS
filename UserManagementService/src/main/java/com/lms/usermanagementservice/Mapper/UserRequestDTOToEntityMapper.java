@@ -1,5 +1,6 @@
 package com.lms.usermanagementservice.Mapper;
 
+import com.LMS.Constants.AccountStatus;
 import com.LMS.DTOs.UserService.UserRequestDTO;
 import com.lms.usermanagementservice.Model.Users;
 import lombok.RequiredArgsConstructor;
@@ -22,7 +23,7 @@ public class UserRequestDTOToEntityMapper  {
                         .gender(userRequestDTO.gender())
 
                         .phoneNumber(userRequestDTO.phoneNumber())
-                        .accountStatus(userRequestDTO.accountStatus())
+                        .accountStatus(AccountStatus.valueOf(userRequestDTO.accountStatus().toUpperCase()))
                         .build();
     }
 }

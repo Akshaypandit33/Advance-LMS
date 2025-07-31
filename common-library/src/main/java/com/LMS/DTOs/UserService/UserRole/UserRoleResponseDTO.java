@@ -1,4 +1,4 @@
-package com.LMS.DTOs.UserService;
+package com.LMS.DTOs.UserService.UserRole;
 
 import java.time.ZonedDateTime;
 import java.util.UUID;
@@ -9,7 +9,6 @@ public record UserRoleResponseDTO(
         String fullName,
         UUID roleId,
         String roleName,
-        UUID assignedBy,
         ZonedDateTime assignedAt
 ) {
 }

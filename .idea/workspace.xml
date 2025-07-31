@@ -4,7 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14156c6a-d163-45f2-89f0-3df1ea66ac7e" name="Changes" comment="tenant-core documented properly" />
+    <list default="true" id="14156c6a-d163-45f2-89f0-3df1ea66ac7e" name="Changes" comment="tenant-core documented properly">
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/RolesService.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserRoleService.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/RolesControllerIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/UserControllerIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/UserRoleIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/IntegrationTestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/FetchByRoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/UserInfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/UserRoleInfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/UserRoleResponseDTOList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/RoleBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/RoleBusinessLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserBusinessLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserRoleBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserRoleBusinessLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/RoleServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/RoleServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/ExceptionHandler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/ExceptionHandler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRequestDTOToEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRequestDTOToEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRole/UserRoleEntityToResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRole/UserRoleEntityToResponseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRolesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRolesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserService.http" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserService.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_6__Create_user_roles_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_6__Create_user_roles_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/RolesDTO/RoleResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/RolesDTO/RoleResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRoleRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/UserRoleRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRoleResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/UserRoleResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenant-core.md" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Resolver/HttpHeaderTenantResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Resolver/HttpHeaderTenantResolver.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +57,9 @@
       <list>
         <option value="Exception" />
         <option value="Enum" />
-        <option value="Record" />
         <option value="Interface" />
         <option value="HTTP Public Environment File" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -37,6 +79,9 @@
     &quot;accountId&quot;: &quot;ae39d34e-b3b8-4dec-9b8a-031e97069fd3&quot;
   }
 }</component>
+  <component name="HttpClientEndpointsTabState">
+    <option name="cachedRequestData" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;2231d98a9ae627666431d0df79fa023ef5d61b57&quot; value=&quot;###&amp;#10;POST http://localhost:8082/v1/roles&amp;#10;Content-Type: application/json&amp;#10;&amp;#10;{&amp;#10;  &amp;quot;roleName&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;  &amp;quot;descriptions&amp;quot;: &amp;quot;&amp;quot;&amp;#10;}&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
+  </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -59,12 +104,34 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.Kafka-Compose.yml: Compose Deployment.executor": "Run",
+    "HTTP Request.RolesService | 1. Create Role.executor": "Run",
+    "HTTP Request.RolesService | 2. Get All Roles (Paginated).executor": "Run",
+    "HTTP Request.RolesService | 3. Get Role by ID.executor": "Run",
+    "HTTP Request.RolesService | 4. Get Role by Name.executor": "Run",
+    "HTTP Request.RolesService | 5. Delete Role by ID.executor": "Run",
     "HTTP Request.TenantService | #1.executor": "Run",
+    "HTTP Request.UserRoleService | List Roles of a User.executor": "Run",
+    "HTTP Request.UserRoleService | assign userRole.executor": "Run",
+    "HTTP Request.UserRoleService | get All users from roleName.executor": "Run",
+    "HTTP Request.UserRoleService | get all.executor": "Run",
+    "HTTP Request.UserRoleService | get.executor": "Run",
+    "HTTP Request.UserRoleService | revoke the user role.executor": "Run",
     "HTTP Request.UserService | #1.executor": "Run",
+    "HTTP Request.UserService | 3. Get all users (with pagination).executor": "Run",
+    "HTTP Request.UserService | 4. Search users (with pagination).executor": "Run",
+    "HTTP Request.UserService | 6. Get user by Email.executor": "Run",
+    "HTTP Request.UserService | 7. Change user account status.executor": "Run",
+    "HTTP Request.UserService | Get all users (with pagination).executor": "Run",
     "HTTP Request.UserService | get all users.executor": "Run",
     "HTTP Request.generated-requests | #10.executor": "Run",
     "HTTP Request.generated-requests | #7.executor": "Run",
     "HTTP Request.generated-requests | #9.executor": "Run",
+    "JUnit.RolesControllerIntegrationTest.executor": "Run",
+    "JUnit.UserControllerIntegrationTest.crateUser_SuccessTest.executor": "Run",
+    "JUnit.UserControllerIntegrationTest.createAndFetchUser_SuccessTest.executor": "Run",
+    "JUnit.UserControllerIntegrationTest.executor": "Run",
+    "JUnit.UserControllerIntegrationTest.getAllUser_SuccessTest.executor": "Run",
+    "JUnit.UserRoleIntegrationTest.test_AssignUserRole.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -78,6 +145,7 @@
     "Spring Boot.TenantManagementServiceApplication.executor": "Run",
     "Spring Boot.UserManagementServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/Advance-LMS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,10 +153,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "AtomSelectConfig",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -122,21 +190,46 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.UserService | get all users">
-    <configuration name="TenantService | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/TestingEndoints/TenantService.http" executionIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="JUnit.UserRoleIntegrationTest.test_AssignUserRole">
+    <configuration name="UserRoleService | List Roles of a User" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserRoleService.http" executionIdentifier="List Roles of a User" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="UserService | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserService.http" executionIdentifier="#1" runType="Run single request">
+    <configuration name="UserRoleService | get All users from roleName" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserRoleService.http" executionIdentifier="get All users from roleName" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="UserService | get all users" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserService.http" executionIdentifier="get all users" index="2" runType="Run single request">
+    <configuration name="UserRoleService | get all" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserRoleService.http" executionIdentifier="get all" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#10" index="10" runType="Run single request">
-      <method v="2" />
+    <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserManagementService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lms.usermanagementservice.IntegrationTest.Classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lms.usermanagementservice.IntegrationTest.Classes" />
+      <option name="MAIN_CLASS_NAME" value="com.lms.usermanagementservice.IntegrationTest.Classes.UserControllerIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#9" index="9" runType="Run single request">
-      <method v="2" />
+    <configuration name="UserRoleIntegrationTest.test_AssignUserRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserManagementService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lms.usermanagementservice.IntegrationTest.Classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lms.usermanagementservice.IntegrationTest.Classes" />
+      <option name="MAIN_CLASS_NAME" value="com.lms.usermanagementservice.IntegrationTest.Classes.UserRoleIntegrationTest" />
+      <option name="METHOD_NAME" value="test_AssignUserRole" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ServiceDiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -170,11 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.UserService | get all users" />
-        <item itemvalue="HTTP Request.UserService | #1" />
-        <item itemvalue="HTTP Request.TenantService | #1" />
-        <item itemvalue="HTTP Request.generated-requests | #10" />
-        <item itemvalue="HTTP Request.generated-requests | #9" />
+        <item itemvalue="JUnit.UserRoleIntegrationTest.test_AssignUserRole" />
+        <item itemvalue="JUnit.UserControllerIntegrationTest" />
+        <item itemvalue="HTTP Request.UserRoleService | get All users from roleName" />
+        <item itemvalue="HTTP Request.UserRoleService | List Roles of a User" />
+        <item itemvalue="HTTP Request.UserRoleService | get all" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +295,15 @@
       <workItem from="1753262905892" duration="1262000" />
       <workItem from="1753285708001" duration="2363000" />
       <workItem from="1753341552992" duration="6798000" />
-      <workItem from="1753721792920" duration="3931000" />
+      <workItem from="1753721792920" duration="14069000" />
+      <workItem from="1753764758029" duration="13057000" />
+      <workItem from="1753863069863" duration="832000" />
+      <workItem from="1753895895319" duration="129000" />
+      <workItem from="1753896038219" duration="3372000" />
+      <workItem from="1753899528249" duration="131000" />
+      <workItem from="1753899669238" duration="141000" />
+      <workItem from="1753899912381" duration="1175000" />
+      <workItem from="1753947457529" duration="5873000" />
     </task>
     <task id="LOCAL-00001" summary="tenat isolation strategy completed">
       <option name="closed" value="true" />
@@ -236,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753725165417</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tenant-core documented properly">
+      <option name="closed" value="true" />
+      <created>1753725895868</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753725895868</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,20 +356,5 @@
     <MESSAGE value="on tenant creation automatically schema creation is created" />
     <MESSAGE value="tenant-core documented properly" />
     <option name="LAST_COMMIT_MESSAGE" value="tenant-core documented properly" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java</url>
-          <line>28</line>
-          <properties class="com.lms.usermanagementservice.Service.ServiceImpl.UserServiceImpl" method="createUser">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

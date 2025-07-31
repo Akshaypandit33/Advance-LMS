@@ -19,6 +19,7 @@ import com.LMS.Exceptions.UserService.EmailNotFoundException;
 import com.LMS.Exceptions.UserService.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.CannotCreateTransactionException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -99,6 +100,17 @@ public class GlobalExceptionHandler {
         return handleUnAuthorizedOperationException(ex.getMessage());
     }
 
+
+
+        @ExceptionHandler(CannotCreateTransactionException.class)
+        public ResponseEntity<String> handleCannotCreateTransaction(CannotCreateTransactionException ex) {
+            if (ex.getCause() instanceof org.hibernate.exception.SQLGrammarException &&
+                    ex.getMessage().contains("does not exist")) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                        .body("Tenant schema not found.");
+            }
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Database error occurred");
+        }
 
 
 

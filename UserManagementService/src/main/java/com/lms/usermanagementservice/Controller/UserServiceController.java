@@ -10,8 +10,11 @@ import org.springframework.data.domain.Page;
 
 import org.springframework.data.domain.Pageable;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
 import java.util.UUID;
 
 
@@ -23,8 +26,8 @@ public class UserServiceController {
     private final UserService userService;
     // 1. Create user
     @PostMapping
-    public UserResponseDTO createUser(@RequestBody UserRequestDTO request) {
-        return userService.createUser(request);
+    public ResponseEntity<UserResponseDTO> createUser(@RequestBody UserRequestDTO request) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(userService.createUser(request));
     }
 
     // 2. Update user by email (if you don't have userId)
@@ -74,8 +77,9 @@ public class UserServiceController {
 
     // 8. Delete user
     @DeleteMapping("/{id}")
-    public void deleteUser(@PathVariable UUID id) {
-        userService.deleteUser(id);
+    public ResponseEntity<Map<String,String>> deleteUser(@PathVariable UUID id) {
+        return ResponseEntity.ok(userService.deleteUser(id));
+
     }
 
     @GetMapping("/getHeaders")

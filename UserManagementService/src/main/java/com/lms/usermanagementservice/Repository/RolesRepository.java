@@ -1,6 +1,9 @@
 package com.lms.usermanagementservice.Repository;
 
 import com.lms.usermanagementservice.Model.Roles;
+import org.jetbrains.annotations.NotNull;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import org.springframework.stereotype.Repository;
@@ -19,5 +22,6 @@ public interface RolesRepository extends JpaRepository<Roles, UUID> {
 
     boolean existsByRoleName(String roleName);
 
+    @NotNull Page<Roles> findAll(@NotNull Pageable pageable);
 
 }

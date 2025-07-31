@@ -6,6 +6,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 
+import java.time.Instant;
 import java.time.ZonedDateTime;
 import java.util.UUID;
 
@@ -22,8 +23,7 @@ import java.util.UUID;
         },
         indexes = {
                 @Index(name = "idx_user_roles_user_id", columnList = "user_id"),
-                @Index(name = "idx_user_roles_role_id", columnList = "role_id"),
-                @Index(name = "idx_user_roles_assigned_by", columnList = "assigned_by")
+                @Index(name = "idx_user_roles_role_id", columnList = "role_id")
         }
 )
 
@@ -44,6 +44,14 @@ public class UserRole extends BaseClass {
 
     @Column(name = "assigned_at")
     private ZonedDateTime assignedAt;
+
+    @PrePersist
+    public void onCreate()
+    {
+        if (this.assignedAt == null) {
+            this.assignedAt = ZonedDateTime.now(); // Only if not set explicitly
+        }
+    }
 
 }
 

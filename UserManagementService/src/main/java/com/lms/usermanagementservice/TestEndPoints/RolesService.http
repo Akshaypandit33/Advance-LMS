@@ -1,0 +1,36 @@
+@tenantIdHeader = niet_00
+@baseUrl = http://localhost:8082/v1/roles
+### 1. Create Role
+POST {{baseUrl}}
+Content-Type: application/json
+X-Tenant-Id: {{tenantIdHeader}}
+
+{
+  "roleName": "TEST_ADMIN",
+  "descriptions": "Test role from HTTP client"
+}
+
+
+### 2. Get All Roles (Paginated)
+GET {{baseUrl}}?page=0&size=10
+Accept: application/json
+X-Tenant-Id: {{tenantIdHeader}}
+
+
+### 3. Get Role by ID
+@roleId = 6e7d9ce9-b2eb-4e8a-a0a6-93ff81e3f572
+GET {{baseUrl}}/{{roleId}}
+Accept: application/json
+X-Tenant-Id: {{tenantIdHeader}}
+
+
+### 4. Get Role by Name
+GET {{baseUrl}}/search?name=TEST_ADMIN
+Accept: application/json
+X-Tenant-Id: {{tenantIdHeader}}
+
+
+### 5. Delete Role by ID
+DELETE {{baseUrl}}/{{roleId}}
+Accept: application/json
+X-Tenant-Id: {{tenantIdHeader}}

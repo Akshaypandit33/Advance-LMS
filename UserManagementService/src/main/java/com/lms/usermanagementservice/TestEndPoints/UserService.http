@@ -1,4 +1,4 @@
-
+@tenantId = niet_00
 @baseUrl= http://localhost:8082/v1/users
 //
 
@@ -9,18 +9,45 @@ Content-Type: application/json
 X-Tenant-Id:niet_00
 
 {
-  "firstName": "aditya",
+  "firstName": "ankit",
   "lastName": "kumar",
-  "email": "aditya@gmail.com",
+  "email": "ankit@gmail.com",
   "password": "password@123",
   "phoneNumber": "9999999999",
   "gender": "Male",
   "accountStatus": "ACTIVE",
   "rolesId": [
-    "104632dd-ee6f-48ef-bfc0-7ac6817d056e"
+    "bb3fc3cb-03f0-40c5-8704-2c0ba40c5097"
   ]
 }
 
 ### get all users
 GET {{baseUrl}}
-X-Tenant-Id:LMS_LMS0001
+X-Tenant-Id:LMS_LMS000
+
+###  Get all users (with pagination)
+
+GET {{baseUrl}}?page=0&size=10
+X-Tenant-Id: {{tenantId}}
+
+
+### 4. Search users (with pagination)
+GET {{baseUrl}}/search?q=a&page=0&size=10
+X-Tenant-Id: {{tenantId}}
+
+### 5. Get user by ID
+GET {{baseUrl}}/{{userId}}
+X-Tenant-Id: {{tenantId}}
+
+### 6. Get user by Email
+GET {{baseUrl}}/by-email/ankit@gmail.com
+X-Tenant-Id: {{tenantId}}
+
+### 7. Change user account status
+@userId = bd8893f7-2654-45e3-bd51-092f95b58ed8
+PATCH {{baseUrl}}/{{userId}}/status?status=BLOCKED
+X-Tenant-Id: {{tenantId}}
+
+### 8. Delete user
+DELETE {{baseUrl}}/api/users/{{userId}}
+X-Tenant-ID: {{tenantId}}

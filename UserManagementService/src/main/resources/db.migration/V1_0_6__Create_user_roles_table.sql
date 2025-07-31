@@ -17,6 +17,6 @@ CREATE TABLE user_roles (
 -- Create indexes for User Roles table
 CREATE INDEX idx_user_roles_user_id ON user_roles(user_id);
 CREATE INDEX idx_user_roles_role_id ON user_roles(role_id);
-CREATE INDEX idx_user_roles_assigned_by ON user_roles(assigned_by) WHERE assigned_by IS NOT NULL;
+-- CREATE INDEX idx_user_roles_assigned_by ON user_roles(assigned_by) WHERE assigned_by IS NOT NULL;
 
 
