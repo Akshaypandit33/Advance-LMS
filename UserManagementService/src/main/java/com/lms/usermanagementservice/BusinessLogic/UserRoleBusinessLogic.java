@@ -1,5 +1,6 @@
 package com.lms.usermanagementservice.BusinessLogic;
 
+import com.LMS.DTOs.DeleteResourceDTO;
 import com.LMS.Exceptions.RoleService.RoleNotFoundException;
 import com.LMS.Exceptions.UnAuthorizedOperationException;
 import com.LMS.Exceptions.UserService.UserNotFoundException;
@@ -61,7 +62,7 @@ public class UserRoleBusinessLogic {
     }
 
     @Transactional
-    public Map<String, String> revokeUserRole(UUID userId, String roleName) {
+    public DeleteResourceDTO revokeUserRole(UUID userId, String roleName) {
         Roles role = rolesRepository.findByRoleName(roleName.trim().toUpperCase())
                 .orElseThrow(() -> new RoleNotFoundException("Role with name " + roleName + " not found"));
 
@@ -70,14 +71,12 @@ public class UserRoleBusinessLogic {
 
         Optional<UserRole> userRole = userRolesRepository.findUserRoleByRole_IdAndUser_Id(role.getId(), userId);
 
-        Map<String, String> response = new HashMap<>();
+        DeleteResourceDTO response = null;
         if (userRole.isPresent()) {
             userRolesRepository.deleteById(userRole.get().getId());
-            response.put("status", "success");
-            response.put("message", "User role '" + roleName.toUpperCase() + "' has been revoked from user " + userId);
+            response = new DeleteResourceDTO("success","User role '" + roleName.toUpperCase() + "' has been revoked from user " + userId);
         } else {
-            response.put("status", "failure");
-            response.put("message", "User " + userId + " does not have role '" + roleName.toUpperCase() + "'");
+            response = new DeleteResourceDTO("failure","User " + userId + " does not have role '" + roleName.toUpperCase() );
         }
 
         return response;

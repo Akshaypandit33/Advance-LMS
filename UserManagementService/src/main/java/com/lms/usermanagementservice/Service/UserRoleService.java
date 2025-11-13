@@ -1,5 +1,6 @@
 package com.lms.usermanagementservice.Service;
 
+import com.LMS.DTOs.DeleteResourceDTO;
 import com.LMS.DTOs.UserService.UserRole.FetchByRoleDTO;
 import com.LMS.DTOs.UserService.UserRole.UserRoleRequestDTO;
 import com.LMS.DTOs.UserService.UserRole.UserRoleResponseDTO;
@@ -13,7 +14,7 @@ import java.util.UUID;
 public interface UserRoleService {
     UserRoleResponseDTO assignUserRole(UserRoleRequestDTO userRoleRequestDTO);
     UserRoleResponseDTOList listUserRoles(UUID userId);
-     Map<String,String> revokeUserRole(UUID userId, String roleName);
+    DeleteResourceDTO revokeUserRole(UUID userId, String roleName);
      FetchByRoleDTO getUsersByRoleName(String roleName, Pageable pageable);
      Page<UserRoleResponseDTO> findAllUserRoles(Pageable pageable);
 }

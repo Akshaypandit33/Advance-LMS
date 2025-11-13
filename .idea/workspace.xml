@@ -4,357 +4,238 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14156c6a-d163-45f2-89f0-3df1ea66ac7e" name="Changes" comment="tenant-core documented properly">
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/RoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/RolesService.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserRoleService.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/application-test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/RolesControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/UserControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/UserRoleIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/IntegrationTestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/FetchByRoleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/UserInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/UserRoleInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/UserRoleResponseDTOList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="920195c2-e663-4008-84b1-bc04c470de5b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ApiEndpoints.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/docs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Config/MultiTenancyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Controller/Global/GlobalActionServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Controller/Global/GlobalPermissionsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Controller/Global/GlobalResourcesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Controller/Global/GlobalRolePermissionsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Controller/Global/GlobalRolesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Controller/Tenant/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Controller/Tenant/RolePermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Controller/Tenant/RolesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Kafka/Config/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Kafka/Config/TenantEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Mapper/ActionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Mapper/ResourceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Mapper/RolePermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Model/Global/GlobalActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Model/Global/GlobalPermissions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Model/Global/GlobalResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Model/Global/GlobalRolePermissions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Model/Global/GlobalRoles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Model/Global/GlobalUsers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Model/Tenant/RolePermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Model/Tenant/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Model/Tenant/UserRoles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Model/Tenant/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Repository/Global/GlobalActionsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Repository/Global/GlobalPermissionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Repository/Global/GlobalResourceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Repository/Global/GlobalRolePermissionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Repository/Global/GlobalRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Repository/Global/GlobalUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Repository/Tenant/RolePermissionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Repository/Tenant/RolesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Repository/Tenant/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Seeder/GlobalRolePermissionSeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Global/GlobalActionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Global/GlobalPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Global/GlobalResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Global/GlobalRolePermissionsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Global/GlobalRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Global/Impl/GlobalActionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Global/Impl/GlobalPermissionsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Global/Impl/GlobalResourceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Global/Impl/GlobalRolePermissionsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Global/Impl/GlobalRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Tenant/RolePermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Tenant/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Tenant/ServiceImpl/RolePermissionImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/java/com/lms/identityservice/Service/Tenant/ServiceImpl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/resources/db/migration/Global/V1_0_1__Create_User_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/resources/db/migration/Global/V1_0_2__create_global_roles_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/resources/db/migration/Global/V1_0_3__create_global_actions_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/resources/db/migration/Global/V1_0_4__create_global_role_permissions_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/resources/db/migration/Global/V1_0_5__create_global_permissions.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/resources/db/migration/Global/V1_0_6__create_global_resources.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/resources/db/migration/Tenant/V1__create_users_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/resources/db/migration/Tenant/V2__create_roles_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/resources/db/migration/Tenant/V3__create_user_roles_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/main/resources/db/migration/Tenant/V4__create_role_permission_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/test/java/com/lms/identityservice/IntegerationTest/Global/GlobalActionControllerIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/test/java/com/lms/identityservice/IntegerationTest/Global/GlobalPermissionsControllerIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/test/java/com/lms/identityservice/IntegerationTest/Global/GlobalResourceControllerIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityService/src/test/java/com/lms/identityservice/IntegerationTest/Global/GlobalRolesControllerIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/Global_RoleBusinessLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/ActionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/ResourceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Gloabal_metadata/Seeder/FlywaySeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Gloabal_metadata/Seeder/GlobalRolesSeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/Global/Global_ActionsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/Global/Global_PermissionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/Global/Global_ResourceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/Global/Global_RolePermissionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/Global/Global_RolesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/Global_ActionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/Global_ActionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/ResourceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/ActionService.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/ResourceService.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/global_metadata/V1_0_1__Create_actions_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/global_metadata/V1_0_2__Create_resource_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/global_metadata/V1_0_3__Create_roles_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/global_metadata/V1_0_4__Create_permissions_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/global_metadata/V1_0_5__Create_role_permissions_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/DeleteResourceDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/PermissionDTO/CreatePermissionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/RolePermissionDTO/RolePermissionBulkRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/RolePermissionDTO/RolePermissionRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Exceptions/RolePermissionService/RolePermissionAlreadyExistsExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Exceptions/RolePermissionService/RolePermissionNotFoundExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Advance-LMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Advance-LMS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Service/Impl/TenantServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/Service/Impl/TenantServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/TenantManagementServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tenant-Management-Service/src/main/java/com/lms/tenantmanagementservice/TenantManagementServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserManagementService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/ActionBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/Global_ActionBusinessLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/PermissionBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/Global_PermissionBusinessLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/ResourceBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/Global_ResourceBusinessLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/RoleBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/RoleBusinessLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserBusinessLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserRoleBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/BusinessLogic/UserRoleBusinessLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/RoleServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/RoleServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/ExceptionHandler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/ExceptionHandler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRequestDTOToEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRequestDTOToEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRole/UserRoleEntityToResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRole/UserRoleEntityToResponseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolesRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRolesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/UserRolesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Controller/UserRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Kafka/Config/TenantEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Kafka/Config/TenantEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/ActionsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/PermissionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/ResourceMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/RoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserEntityToResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRequestDTOToEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Mapper/UserRole/UserRoleEntityToResponseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Actions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Permission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Resource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/RolePermission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/UserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Model/Users.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/ActionsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/PermissionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/ResourceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/ResourceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolePermissionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Repository/RolePermissionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Seeder/RolesPermissionSeeder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/RoleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/ServiceImpl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserService.http" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserService.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_6__Create_user_roles_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_6__Create_user_roles_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/RolesService.http" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/RolesService.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_1__Create_actions_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/V1_0_1__Create_actions_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_2__Create_resource_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/V1_0_2__Create_resource_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_3__Create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/V1_0_3__Create_users_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_4__Create_roles_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/V1_0_4__Create_roles_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_5__Create_permissions_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/V1_0_5__Create_permissions_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_6__Create_user_roles_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/V1_0_6__Create_user_roles_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/main/resources/db.migration/V1_0_7__Create_role_permissions_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/main/resources/db/migration/V1_0_7__Create_role_permissions_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/RolesControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/RolesControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/UserControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/UserControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/UserRoleIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/Classes/UserRoleIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/IntegrationTestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagementService/src/test/java/com/lms/usermanagementservice/IntegrationTest/IntegrationTestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Constants/GlobalConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/Constants/GlobalConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/ActionsDTO/ActionResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/ActionsDTO/ActionResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/PermissionDTO/PermissionRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/PermissionDTO/PermissionRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/PermissionDTO/PermissionResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/PermissionDTO/PermissionResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/ResourceDTO/ResourceRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/ResourceDTO/ResourceRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/ResourceDTO/ResourceResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/ResourceDTO/ResourceResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/RolesDTO/RoleRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/RolesDTO/RoleRequestDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/RolesDTO/RoleResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/RolesDTO/RoleResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRoleRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/UserRoleRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRoleResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserRole/UserRoleResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenant-core.md" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/LMS/DTOs/UserService/UserResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-discovery/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-discovery/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenant-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Resolver/HttpHeaderTenantResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/Resolver/HttpHeaderTenantResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/TenantInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tenant-core/src/main/java/com/lms/tenantcore/TenantInterceptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Exception" />
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="HTTP Public Environment File" />
-        <option value="Record" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Akshaypandit33&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Akshaypandit33/Advance-LMS.git&quot;,
-    &quot;accountId&quot;: &quot;ae39d34e-b3b8-4dec-9b8a-031e97069fd3&quot;
-  }
-}</component>
-  <component name="HttpClientEndpointsTabState">
-    <option name="cachedRequestData" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;2231d98a9ae627666431d0df79fa023ef5d61b57&quot; value=&quot;###&amp;#10;POST http://localhost:8082/v1/roles&amp;#10;Content-Type: application/json&amp;#10;&amp;#10;{&amp;#10;  &amp;quot;roleName&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;  &amp;quot;descriptions&amp;quot;: &amp;quot;&amp;quot;&amp;#10;}&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
-  </component>
-  <component name="KubernetesApiPersistence">{}</component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
-}</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="309Wdqvmz6mVyMRsYWI2hBRuISa" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="35PkH3k2KbcPYRAHdM7BJ5kL4OP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.Kafka-Compose.yml: Compose Deployment.executor": "Run",
-    "HTTP Request.RolesService | 1. Create Role.executor": "Run",
-    "HTTP Request.RolesService | 2. Get All Roles (Paginated).executor": "Run",
-    "HTTP Request.RolesService | 3. Get Role by ID.executor": "Run",
-    "HTTP Request.RolesService | 4. Get Role by Name.executor": "Run",
-    "HTTP Request.RolesService | 5. Delete Role by ID.executor": "Run",
-    "HTTP Request.TenantService | #1.executor": "Run",
-    "HTTP Request.UserRoleService | List Roles of a User.executor": "Run",
-    "HTTP Request.UserRoleService | assign userRole.executor": "Run",
-    "HTTP Request.UserRoleService | get All users from roleName.executor": "Run",
-    "HTTP Request.UserRoleService | get all.executor": "Run",
-    "HTTP Request.UserRoleService | get.executor": "Run",
-    "HTTP Request.UserRoleService | revoke the user role.executor": "Run",
-    "HTTP Request.UserService | #1.executor": "Run",
-    "HTTP Request.UserService | 3. Get all users (with pagination).executor": "Run",
-    "HTTP Request.UserService | 4. Search users (with pagination).executor": "Run",
-    "HTTP Request.UserService | 6. Get user by Email.executor": "Run",
-    "HTTP Request.UserService | 7. Change user account status.executor": "Run",
-    "HTTP Request.UserService | Get all users (with pagination).executor": "Run",
-    "HTTP Request.UserService | get all users.executor": "Run",
-    "HTTP Request.generated-requests | #10.executor": "Run",
-    "HTTP Request.generated-requests | #7.executor": "Run",
-    "HTTP Request.generated-requests | #9.executor": "Run",
-    "JUnit.RolesControllerIntegrationTest.executor": "Run",
-    "JUnit.UserControllerIntegrationTest.crateUser_SuccessTest.executor": "Run",
-    "JUnit.UserControllerIntegrationTest.createAndFetchUser_SuccessTest.executor": "Run",
-    "JUnit.UserControllerIntegrationTest.executor": "Run",
-    "JUnit.UserControllerIntegrationTest.getAllUser_SuccessTest.executor": "Run",
-    "JUnit.UserRoleIntegrationTest.test_AssignUserRole.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ServiceDiscoveryApplication.executor": "Run",
-    "Spring Boot.TenantCoreApplication.executor": "Run",
-    "Spring Boot.TenantManagementServiceApplication.executor": "Run",
-    "Spring Boot.UserManagementServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Advance-LMS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
-    ]
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.identity service.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Advance-LMS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Advance-LMS" />
-      <recent name="D:\Advance-LMS\tenant-core\src\main\java\com\lms\tenantcore" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Advance-LMS\UserManagementService\src\main\resources\db_migration\Tenants" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.lms.tenantcore" />
-    </key>
-  </component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
-        <option value="KtorApplicationConfigurationType" />
-        <option value="MicronautRunConfigurationType" />
-        <option value="QuarkusRunConfigurationType" />
-        <option value="SpringBootApplicationConfigurationType" />
+        <option value="Application" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserRoleIntegrationTest.test_AssignUserRole">
-    <configuration name="UserRoleService | List Roles of a User" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserRoleService.http" executionIdentifier="List Roles of a User" index="3" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="UserRoleService | get All users from roleName" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserRoleService.http" executionIdentifier="get All users from roleName" index="4" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="UserRoleService | get all" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/UserManagementService/src/main/java/com/lms/usermanagementservice/TestEndPoints/UserRoleService.http" executionIdentifier="get all" index="2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UserManagementService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lms.usermanagementservice.IntegrationTest.Classes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lms.usermanagementservice.IntegrationTest.Classes" />
-      <option name="MAIN_CLASS_NAME" value="com.lms.usermanagementservice.IntegrationTest.Classes.UserControllerIntegrationTest" />
-      <option name="TEST_OBJECT" value="class" />
+  <component name="RunManager">
+    <configuration name="identity service" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.lms.identityservice.IdentityServiceApplication" />
+      <module name="IdentityService" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRoleIntegrationTest.test_AssignUserRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UserManagementService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lms.usermanagementservice.IntegrationTest.Classes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lms.usermanagementservice.IntegrationTest.Classes" />
-      <option name="MAIN_CLASS_NAME" value="com.lms.usermanagementservice.IntegrationTest.Classes.UserRoleIntegrationTest" />
-      <option name="METHOD_NAME" value="test_AssignUserRole" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceDiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="service-discovery" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lms.servicediscovery.ServiceDiscoveryApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TenantManagementServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="Tenant-Management-Service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lms.tenantmanagementservice.TenantManagementServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserManagementServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="UserManagementService" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lms.usermanagementservice.UserManagementServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml">
-        <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.UserRoleIntegrationTest.test_AssignUserRole" />
-        <item itemvalue="JUnit.UserControllerIntegrationTest" />
-        <item itemvalue="HTTP Request.UserRoleService | get All users from roleName" />
-        <item itemvalue="HTTP Request.UserRoleService | List Roles of a User" />
-        <item itemvalue="HTTP Request.UserRoleService | get all" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="14156c6a-d163-45f2-89f0-3df1ea66ac7e" name="Changes" comment="" />
-      <created>1753040359056</created>
+      <changelist id="920195c2-e663-4008-84b1-bc04c470de5b" name="Changes" comment="" />
+      <created>1763019003635</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1753040359056</updated>
-      <workItem from="1753040360623" duration="455000" />
-      <workItem from="1753084036527" duration="9577000" />
-      <workItem from="1753115090052" duration="2219000" />
-      <workItem from="1753117376295" duration="711000" />
-      <workItem from="1753122295872" duration="6634000" />
-      <workItem from="1753250492410" duration="8644000" />
-      <workItem from="1753262905892" duration="1262000" />
-      <workItem from="1753285708001" duration="2363000" />
-      <workItem from="1753341552992" duration="6798000" />
-      <workItem from="1753721792920" duration="14069000" />
-      <workItem from="1753764758029" duration="13057000" />
-      <workItem from="1753863069863" duration="832000" />
-      <workItem from="1753895895319" duration="129000" />
-      <workItem from="1753896038219" duration="3372000" />
-      <workItem from="1753899528249" duration="131000" />
-      <workItem from="1753899669238" duration="141000" />
-      <workItem from="1753899912381" duration="1175000" />
-      <workItem from="1753947457529" duration="5873000" />
+      <updated>1763019003635</updated>
     </task>
-    <task id="LOCAL-00001" summary="tenat isolation strategy completed">
-      <option name="closed" value="true" />
-      <created>1753087732117</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1753087732117</updated>
-    </task>
-    <task id="LOCAL-00002" summary="tenat isolation strategy completed">
-      <option name="closed" value="true" />
-      <created>1753087798471</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1753087798471</updated>
-    </task>
-    <task id="LOCAL-00003" summary="on tenant creation automatically schema creation is created">
-      <option name="closed" value="true" />
-      <created>1753264157107</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1753264157107</updated>
-    </task>
-    <task id="LOCAL-00004" summary="tenant-core documented properly">
-      <option name="closed" value="true" />
-      <created>1753725165417</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1753725165417</updated>
-    </task>
-    <task id="LOCAL-00005" summary="tenant-core documented properly">
-      <option name="closed" value="true" />
-      <created>1753725895868</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1753725895868</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="tenat isolation strategy completed" />
-    <MESSAGE value="on tenant creation automatically schema creation is created" />
-    <MESSAGE value="tenant-core documented properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="tenant-core documented properly" />
   </component>
 </project>

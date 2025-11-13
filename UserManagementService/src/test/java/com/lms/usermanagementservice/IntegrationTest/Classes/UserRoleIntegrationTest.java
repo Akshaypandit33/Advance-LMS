@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lms.tenantcore.TenantSchemaInitializer;
 import com.lms.usermanagementservice.IntegrationTest.IntegrationTestUtil;
 import com.lms.usermanagementservice.Kafka.Config.TenantEventListener;
-import com.lms.usermanagementservice.Seeder.RolesPermissionSeeder;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

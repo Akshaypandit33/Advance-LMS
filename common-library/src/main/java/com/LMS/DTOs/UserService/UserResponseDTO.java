@@ -12,6 +12,7 @@ public record UserResponseDTO(
         String email,
         String phoneNumber,
         String gender,
+        boolean isSuperAdmin,
         AccountStatus accountStatus,
         List<String> roles
 ) {

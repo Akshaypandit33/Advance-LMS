@@ -5,13 +5,14 @@ import com.LMS.DTOs.RolesDTO.RoleResponseDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
 public interface RoleService {
 
     RoleResponseDTO addRole(RoleRequestDTO roleRequestDTO);
-    Page<RoleResponseDTO> getAllRoles(Pageable pageable);
+    List<RoleResponseDTO> getAllRoles();
     RoleResponseDTO getRole(UUID roleId);
     RoleResponseDTO findRoleByName(String roleName);
     Map<String,String> deleteRole(UUID roleId);

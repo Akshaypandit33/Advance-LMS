@@ -5,12 +5,11 @@ import com.LMS.DTOs.RolesDTO.RoleResponseDTO;
 import com.lms.usermanagementservice.Service.RoleService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -36,9 +35,8 @@ public class RoleServiceController {
      * Get paginated list of all roles
      */
     @GetMapping
-    public ResponseEntity<Page<RoleResponseDTO>> getAllRoles(Pageable pageable) {
-        Page<RoleResponseDTO> roles = roleService.getAllRoles(pageable);
-        return ResponseEntity.ok(roles);
+    public ResponseEntity<List<RoleResponseDTO>> getAllRoles() {
+        return ResponseEntity.ok(roleService.getAllRoles());
     }
 
     /**

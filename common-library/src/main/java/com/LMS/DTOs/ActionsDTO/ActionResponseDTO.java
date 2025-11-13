@@ -1,8 +1,14 @@
 package com.LMS.DTOs.ActionsDTO;
 
+import java.time.ZonedDateTime;
+import java.util.UUID;
+
 public record ActionResponseDTO(
-        Long actionId,
+        UUID actionId,
         String actionName,
-        String descriptions
+        String descriptions,
+        ZonedDateTime createdAt,
+        ZonedDateTime updatedAt
+
 ) {
 }

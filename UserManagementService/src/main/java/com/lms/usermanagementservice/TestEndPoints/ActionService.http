@@ -1,0 +1,17 @@
+@tenantId = niet_00
+@baseUrl= http://localhost:8082/v1/actions
+
+### add actions
+POST {{baseUrl}}
+X-Tenant-Id: {{tenantId}}
+Content-Type: application/json
+
+{
+  "actionName": "test action",
+  "descriptions": "test_action description"
+}
+
+### get all actions
+GET {{baseUrl}}
+X-Tenant-Id: {{tenantId}}
+Content-Type: application/json

@@ -1,7 +1,11 @@
 package com.LMS.DTOs.ResourceDTO;
 
+import java.util.UUID;
+
 public record ResourceResponseDTO(
-        Long resourceId,
-        String resourceName
+        UUID resourceId,
+        String resourceName,
+        String descriptions,
+        String resourceType
 ) {
 }

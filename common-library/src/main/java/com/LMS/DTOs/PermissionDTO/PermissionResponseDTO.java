@@ -7,6 +7,8 @@ import java.util.UUID;
 
 public record PermissionResponseDTO(
         UUID permissionId,
+        String name,
+        String description,
         ActionResponseDTO actions,
         ResourceResponseDTO resources
 ) {

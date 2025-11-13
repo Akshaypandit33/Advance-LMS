@@ -1,5 +1,6 @@
 package com.lms.usermanagementservice.Controller;
 
+import com.LMS.DTOs.DeleteResourceDTO;
 import com.LMS.DTOs.UserService.UserRole.FetchByRoleDTO;
 import com.LMS.DTOs.UserService.UserRole.UserRoleRequestDTO;
 import com.LMS.DTOs.UserService.UserRole.UserRoleResponseDTO;
@@ -38,12 +39,12 @@ public class UserRoleController {
 
     // Revoke Role from User
     @DeleteMapping("/user/{userId}")
-    public ResponseEntity<Map<String, String>> revokeUserRole(
+    public ResponseEntity<DeleteResourceDTO> revokeUserRole(
             @PathVariable UUID userId,
             @RequestParam String roleName
     ) {
-        Map<String, String> response = userRoleService.revokeUserRole(userId, roleName);
-        return ResponseEntity.ok(response);
+
+        return ResponseEntity.ok( userRoleService.revokeUserRole(userId, roleName));
     }
 
     // Get All Users by Role Name (for Admin UI)

@@ -1,6 +1,7 @@
 package com.lms.tenantcore;
 
 
+import com.LMS.Constants.GlobalConstant;
 import com.lms.tenantcore.Resolver.HttpHeaderTenantResolver;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -19,7 +20,13 @@ public class TenantInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String tenant =tenantResolver.resolveTenantId(request);
         if(tenant == null){
-            TenantContext.setCurrentTenant("public");
+            if(request.getRequestURI().startsWith("/v1/actions"))
+            {
+                TenantContext.setCurrentTenant(GlobalConstant.GLOBAL_METADATA);
+            }
+            else {
+                TenantContext.setCurrentTenant("public");
+            }
         }
         else {
             TenantContext.setCurrentTenant(tenant);

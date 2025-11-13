@@ -1,0 +1,8 @@
+@baseUrl=http://localhost:8082/v1/resources
+@tenantId = niet_00
+###
+
+GET {{baseUrl}}
+Content-Type: application/json
+X-Tenant-Id: {{tenantId}}
+

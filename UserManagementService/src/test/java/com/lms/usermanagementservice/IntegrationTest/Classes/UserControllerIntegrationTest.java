@@ -1,13 +1,10 @@
 package com.lms.usermanagementservice.IntegrationTest.Classes;
 
 import com.LMS.Constants.GlobalConstant;
-import com.LMS.DTOs.UserService.UserRequestDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lms.tenantcore.TenantContext;
 import com.lms.tenantcore.TenantSchemaInitializer;
 import com.lms.usermanagementservice.IntegrationTest.IntegrationTestUtil;
 import com.lms.usermanagementservice.Kafka.Config.TenantEventListener;
-import com.lms.usermanagementservice.Seeder.RolesPermissionSeeder;
 
 
 import org.junit.jupiter.api.*;

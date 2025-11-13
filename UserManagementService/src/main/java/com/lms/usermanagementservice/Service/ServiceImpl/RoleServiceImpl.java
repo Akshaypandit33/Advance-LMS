@@ -1,9 +1,14 @@
 package com.lms.usermanagementservice.Service.ServiceImpl;
 
+import com.LMS.Constants.GlobalConstant;
 import com.LMS.DTOs.RolesDTO.RoleRequestDTO;
 import com.LMS.DTOs.RolesDTO.RoleResponseDTO;
+import com.LMS.Exceptions.RoleService.RoleAlreadyExistsException;
+import com.lms.tenantcore.TenantContext;
+import com.lms.usermanagementservice.BusinessLogic.Global_RoleBusinessLogic;
 import com.lms.usermanagementservice.BusinessLogic.RoleBusinessLogic;
 import com.lms.usermanagementservice.Mapper.RoleMapper;
+import com.lms.usermanagementservice.Model.Globals.Global_Roles;
 import com.lms.usermanagementservice.Model.Roles;
 import com.lms.usermanagementservice.Model.UserRole;
 import com.lms.usermanagementservice.Service.RoleService;
@@ -24,19 +29,38 @@ import java.util.UUID;
 public class RoleServiceImpl implements RoleService {
 
     private final RoleBusinessLogic roleBusinessLogic;
+    private final Global_RoleBusinessLogic global_roleBusinessLogic;
 
     @Transactional
     @Override
     public RoleResponseDTO addRole(RoleRequestDTO roleRequestDTO) {
+        if(global_roleBusinessLogic.isRoleExist(roleRequestDTO.roleName()))
+        {
+            throw new RoleAlreadyExistsException("You can not make roles same as global roles");
+        }
         return RoleMapper.toResponseDTO(roleBusinessLogic.addRole(roleRequestDTO));
     }
 
     @Override
-    public Page<RoleResponseDTO> getAllRoles(Pageable pageable) {
+    public List<RoleResponseDTO> getAllRoles() {
 
-        Page<Roles> rolesPage = roleBusinessLogic.findAllRoles(pageable);
-
-        return rolesPage.map(RoleMapper::toResponseDTO);
+        String currentTenant = TenantContext.getCurrentTenant();
+        List<Global_Roles> globalRoles = null;
+        try{
+            TenantContext.setCurrentTenant(GlobalConstant.GLOBAL_METADATA);
+            globalRoles = global_roleBusinessLogic.getAllGlobalRoles();
+        }finally {
+            TenantContext.setCurrentTenant(currentTenant);
+        }
+        List<Roles> rolesPage = roleBusinessLogic.findAllRoles();
+        List<RoleResponseDTO> roleResponseDTOList = new ArrayList<>();
+        for(Global_Roles globalRole : globalRoles){
+            roleResponseDTOList.add(RoleMapper.toResponseDTO(globalRole));
+        }
+        for(Roles role : rolesPage){
+            roleResponseDTOList.add(RoleMapper.toResponseDTO(role));
+        }
+        return roleResponseDTOList;
     }
 
     @Override

@@ -20,12 +20,12 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class TenantServiceImpl implements TenantService {
 
     private final TenantRepository tenantRepository;
     private final TenantEventProducer tenantEventProducer;
 
-    @Transactional
     @Override
     public TenantResponseDTO addTenant(RegisterTenantRequestDTO registerTenantRequestDTO) {
         String normalizedCode = registerTenantRequestDTO.collegeCode().trim().toUpperCase();
@@ -49,13 +49,14 @@ public class TenantServiceImpl implements TenantService {
 
 
 
-
+    @Transactional(readOnly = true)
     @Override
     public Page<TenantResponseDTO> getAllTenants(Pageable pageable) {
 
         return tenantRepository.findAll(pageable).map(TenantMapper::toDTO);
     }
 
+    @Transactional(readOnly = true)
     @Override
     public TenantResponseDTO getTenantById(UUID id) {
         return TenantMapper.toDTO(tenantRepository.findById(id).orElseThrow(

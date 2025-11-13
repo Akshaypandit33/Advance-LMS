@@ -1,0 +1,71 @@
+package com.lms.identityservice.Kafka.Config;
+
+import com.LMS.Kafka.KafkaTopics;
+import com.LMS.Kafka.TenantAddedEvent;
+import com.lms.identityservice.Repository.Tenant.UserRepository;
+import com.lms.tenantcore.TenantContext;
+import com.lms.tenantcore.TenantSchemaInitializer;
+
+
+
+import lombok.RequiredArgsConstructor;
+import org.flywaydb.core.Flyway;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
+
+
+import javax.sql.DataSource;
+
+
+
+@Service
+@RequiredArgsConstructor
+public class TenantEventListener {
+
+    private static final Logger logger = LoggerFactory.getLogger(TenantEventListener.class);
+    private final TenantSchemaInitializer tenantSchemaInitializer;
+    private final UserRepository userRepository;
+    private final DataSource dataSource;
+
+    @Value("${spring.flyway.locations}/Tenant")
+    private String migrateLocation;
+
+    @KafkaListener(topics = KafkaTopics.ADD_TENANT_TOPIC, groupId = "identity-mgmt-group", containerFactory = "kafkaListenerContainerFactory")
+    public void handleTenantAddedEvent(TenantAddedEvent event) throws Exception {
+        logger.info("Received TenantAddedEvent in User Management: {}", event);
+
+        // TODO: Initialize tenant-specific setup here, e.g., create schema, default admin, etc.
+        System.out.println("Received TenantAddedEvent in User Management: " + event);
+
+        String schemaName = event.schemaName();
+
+        tenantSchemaInitializer.createTenantSchema(schemaName);
+
+        // set current Tenant
+        TenantContext.setCurrentTenant(schemaName);
+
+        // create table in the schema
+        createTableInSchema(schemaName);
+        userRepository.count();
+
+        //seed roles and permission
+
+
+
+
+    }
+
+    public void createTableInSchema(String schemaName) {
+        Flyway flyway = Flyway.configure()
+                .dataSource(dataSource)
+                .schemas(schemaName)
+                .locations(migrateLocation)
+                .baselineOnMigrate(true)
+                .load();
+        flyway.migrate();
+    }
+}

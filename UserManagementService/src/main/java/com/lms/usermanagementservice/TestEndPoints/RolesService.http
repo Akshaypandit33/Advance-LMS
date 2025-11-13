@@ -6,7 +6,7 @@ Content-Type: application/json
 X-Tenant-Id: {{tenantIdHeader}}
 
 {
-  "roleName": "TEST_ADMIN",
+  "roleName": "ADMIN",
   "descriptions": "Test role from HTTP client"
 }
 

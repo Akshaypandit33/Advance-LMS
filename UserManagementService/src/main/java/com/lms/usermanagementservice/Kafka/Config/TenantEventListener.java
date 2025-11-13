@@ -6,7 +6,6 @@ import com.lms.tenantcore.TenantContext;
 import com.lms.tenantcore.TenantSchemaInitializer;
 
 import com.lms.usermanagementservice.Repository.UserRepository;
-import com.lms.usermanagementservice.Seeder.RolesPermissionSeeder;
 
 import lombok.RequiredArgsConstructor;
 import org.flywaydb.core.Flyway;
@@ -28,7 +27,6 @@ public class TenantEventListener {
 
     private static final Logger logger = LoggerFactory.getLogger(TenantEventListener.class);
     private final TenantSchemaInitializer tenantSchemaInitializer;
-    private final RolesPermissionSeeder  rolesPermissionSeeder  ;
     private final UserRepository userRepository;
     private final DataSource dataSource;
 
@@ -54,7 +52,6 @@ public class TenantEventListener {
         userRepository.count();
 
         //seed roles and permission
-        rolesPermissionSeeder.seedRolePermission(schemaName);
 
 
 

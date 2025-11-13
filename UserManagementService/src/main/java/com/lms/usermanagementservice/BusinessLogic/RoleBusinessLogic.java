@@ -4,6 +4,7 @@ import com.LMS.DTOs.RolesDTO.RoleRequestDTO;
 import com.LMS.Exceptions.RoleService.RoleAlreadyExistsException;
 import com.LMS.Exceptions.RoleService.RoleNotFoundException;
 import com.lms.usermanagementservice.Model.Roles;
+import com.lms.usermanagementservice.Repository.Global.Global_RolesRepository;
 import com.lms.usermanagementservice.Repository.RolesRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -20,7 +21,6 @@ import java.util.UUID;
 public class RoleBusinessLogic {
 
     private final RolesRepository rolesRepository;
-
     public Roles addRole(RoleRequestDTO roleRequestDTO) {
         boolean exists = rolesRepository.existsByRoleName(roleRequestDTO.roleName().toUpperCase());
         if (exists) {
@@ -33,8 +33,9 @@ public class RoleBusinessLogic {
                 .build());
     }
 
-    public Page<Roles> findAllRoles(Pageable pageable) {
-        return rolesRepository.findAll(pageable);
+    public List<Roles> findAllRoles() {
+
+        return rolesRepository.findAll();
     }
 
     public Roles getRoleById( UUID roleId) {

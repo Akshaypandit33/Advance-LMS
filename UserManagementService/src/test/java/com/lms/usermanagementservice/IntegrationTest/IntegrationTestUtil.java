@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lms.tenantcore.TenantContext;
 import com.lms.tenantcore.TenantSchemaInitializer;
 import com.lms.usermanagementservice.Kafka.Config.TenantEventListener;
-import com.lms.usermanagementservice.Seeder.RolesPermissionSeeder;
 
 
 import java.util.Collections;

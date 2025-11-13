@@ -11,5 +11,5 @@ public class GlobalConstant {
     public static final String SUPER_ADMIN_EMAIL = "superAdmin@lms.com";
     public static final String SUPER_ADMIN_PASSWORD = "Super@123";
 
-
+    public static final String GLOBAL_METADATA = "global_metadata";
 }

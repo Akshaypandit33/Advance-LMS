@@ -10,6 +10,7 @@ public record UserRequestDTO(
         String phoneNumber,
         String gender,
         String accountStatus,
+        boolean isSuperAdmin,
         List<String> roles
 ) {
 

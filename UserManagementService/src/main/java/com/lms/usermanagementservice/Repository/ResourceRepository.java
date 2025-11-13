@@ -1,7 +1,6 @@
 package com.lms.usermanagementservice.Repository;
 
 import com.LMS.Constants.ResourcesName;
-import com.lms.usermanagementservice.Model.Resource;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
